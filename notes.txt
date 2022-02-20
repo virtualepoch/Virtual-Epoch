@@ -1,0 +1,62 @@
+ button {
+    height: 5vh;
+    width: 20vw;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  <script src="https://kit.fontawesome.com/77ea0c8449.js" crossorigin="anonymous"></script>
+
+
+    nav ul {
+    display: block;
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 130px;
+    margin: 0 10px;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 20px;
+    
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: black;
+    background: white;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: 0.7s;
+  }
+
+  /* When the width is between 600px and 900px OR above 1100px - change the appearance of <div> */
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+}
+
+filter: invert(88%) sepia(18%) saturate(886%) hue-rotate(199deg) brightness(100%) contrast(90%); NOTE: WAS USING THIS FOR LOGO
+
+
+!!!!!!!BY DEFAULT <a>< /a> TAGS OR LINK TAGS ARE INLINE ELEMENTS AND INLINE ELEMENTS DONT HAVE TOP/BOTTOM MARGINS
+
+box-shadow: h-offset v-offset blur spread color;
+
+h-offset sets the shadow horizontally. A positive value sets the right shadow, and a negative value sets the left one.
+
+v-shadow sets the shadow vertically. A positive value sets the shadow below the box, and a negative value sets the shadow above the box.
+
+blur is an optional attribute, which blurs the box-shadow.
+
+spread sets the shadow size.
+
+color is an optional attribute that sets the shadow color.

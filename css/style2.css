@@ -1,0 +1,23 @@
+.aboutcontent {
+  height: calc(100%-50px);
+  font-size: 13px;
+
+  padding: 20px;
+  text-transform: none;
+}
+.aboutlinks {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.aboutlinks a {
+    color:black;
+  background: white;
+  padding: 7px 17px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.aboutlinks a:hover {
+  background: black;
+  color: white;
+}
