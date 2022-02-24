@@ -156,7 +156,7 @@ section h5 {
   bottom: 100px;
   left: 0;
   right: 0;
-  box-shadow: 0 20px 35px rgba(148, 148, 148, 0.3);
+  box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
   border-radius: 5px;
   overflow: hidden;
   background-color: white;
@@ -226,21 +226,21 @@ ul {
 .link2 {
   position: fixed;
   width: 100vw;
-  margin-top: 270px;
+  margin-top: 250px;
   top: -100%;
   transition: 0.9s;
 }
 .link3 {
   position: fixed;
   width: 100vw;
-  margin-top: 340px;
+  margin-top: 320px;
   top: -100%;
   transition: 0.7s;
 }
 .link4 {
   position: fixed;
   width: 100vw;
-  margin-top: 410px;
+  margin-top: 390px;
   top: -100%;
   transition: 0.5s;
 }
