@@ -53,7 +53,7 @@ label.logo:hover img {
   position: fixed;
   width: 100vw;
   height: calc(100vh - 80px);
-  background: rgb(69, 170, 200);
+  background: rgb(0, 30, 85);
   margin-top: 80px;
   top: -200%;
   text-align: center;
@@ -119,6 +119,8 @@ label.logo:hover img {
 }
 /* MAIN SECTION CONTENT ||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 section {
+  background-image: url(/images/blueice.jpg);
+  background-size: auto 100%;
   color: white;
   text-align: center;
   text-transform: none;
@@ -240,7 +242,7 @@ section #h5.load h5 {
 }
 .actionbutton a::before {
   content: "";
-  background-image: conic-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(100, 197, 253));
+  background-image: conic-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(255, 255, 255));
   height: 500px;
   width: 500px;
   position: absolute;
