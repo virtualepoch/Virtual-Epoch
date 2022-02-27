@@ -134,18 +134,20 @@ section h1 {
   width: fit-content;
   padding: 5px;
   border-right: 1px solid rgb(119, 119, 119);
-  border-bottom: 1px solid rgb(119, 119, 119);
+  border-bottom: 1px solid rgb(119, 119, 119, .5);
   border-left: 1px solid rgb(119, 119, 119);
+  box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
 }
 section h2 {
   font-size: 25px;
   margin-top: 40px;
-  margin-left: 100px;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: fit-content;
-  padding: 3px 300px 3px 20px;
+  padding:10px 20px;
   border-left: 1px solid white;
   border-bottom: 1px solid rgb(61, 61, 61);
+  box-shadow: -5px 5px 6px rgba(255, 255, 255, 0.1);
 }
 section h3 {
   font-size: 25px;
@@ -153,19 +155,21 @@ section h3 {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  padding: 3px 20px 3px 50px;
+  padding: 10px 20px;
   border-right: 1px solid white;
   border-top: 1px solid rgb(95, 95, 95);
+  box-shadow: 5px -5px 6px rgba(255, 255, 255, 0.1);
 }
 section h4 {
   font-size: 25px;
   margin-top: 40px;
-  margin-left: 60px;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: fit-content;
-  padding: 3px 300px 3px 20px;
+  padding: 10px 20px;
   border-left: 1px solid white;
   border-bottom: 1px solid rgb(61, 61, 61);
+  box-shadow: -5px 5px 6px rgba(255, 255, 255, 0.1);
 }
 section h5 {
   font-size: 25px;
@@ -173,9 +177,10 @@ section h5 {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  padding: 3px 20px 3px 50px;
+  padding: 10px 20px;
   border-right: 1px solid white;
   border-top: 1px solid rgb(95, 95, 95);
+  box-shadow: 5px -5px 6px rgba(255, 255, 255, 0.1);
 }
 @keyframes slideInFromBottom {
   0% {
