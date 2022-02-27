@@ -12,23 +12,23 @@
   </head>
   <body>
     <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
       <label class="logo">
         <a href="index.html"><img src="logos/velogo.png" alt="logo" />virtual_epoch</a>
       </label>
 
-      <ul>
-        <li class="link1"><a href="index.html">Home</a></li>
-        <li class="link2"><a href="projects.html">Projects</a></li>
-        <li class="link3"><a class="active" href="about.html">About</a></li>
-        <li class="link4"><a href="contact.html">Contact</a></li>
-      </ul>
+      <a id="menubtn">
+        <i class="fas fa-bars"></i>
+      </a>
+
+      <div id="menubox">
+        <li id="link1"><a href="index.html">Home</a></li>
+        <li id="link2"><a href="projects.html">Projects</a></li>
+        <li id="link3"><a class="active" href="about.html">About</a></li>
+        <li id="link4"><a href="contact.html">Contact</a></li>
+      </div>
     </nav>
 
-    <section>
+    <section id="about">
       <h1>We do Web Apps</h1>
       <div class="aboutcontent">
         <p>Here at virtualepoch.com we strive to exceed client/employer expectations and visions. We provide daily updates on project progress so you see it created in real time and direct wherever you want it to go.</p>
@@ -46,5 +46,6 @@
     </section>
 
     <footer>&copy virtualepoch.com</footer>
+    <script src="test.js"></script>
   </body>
 </html>
