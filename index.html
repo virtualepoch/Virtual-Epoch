@@ -12,7 +12,7 @@
   <body>
     <nav>
       <label class="logo">
-        <a href="index.html"><img src="logos/velogo.png" alt="logo" />virtual_epoch</a>
+        <a onclick="changeHome()"><img src="logos/velogo.png" alt="logo" />virtual_epoch</a>
       </label>
       <a id="menubtn">
         <i class="fas fa-bars"></i>
@@ -25,6 +25,12 @@
       <li id="link3"><a onclick="changeProjects()">Projects</a></li>
       <li id="link4"><a onclick="changeContact()">Contact</a></li>
     </div>
+    <div class="bottom-nav">
+      <a onclick="changeAbout()" id="actionbtn">Learn More</a>
+      <a onclick="changeProjects()" id="actionbtn2">Projects</a>
+      <a onclick="changeContact()" id="actionbtn3">Contact</a>
+      <a onclick="changeHome()" id="actionbtn4">Home</a>
+    </div>
 
     <section id="home">
       <h1>Progressive Web Apps</h1>
@@ -32,7 +38,6 @@
       <div id="h3"><h3>Developement</h3></div>
       <div id="h4"><h4>Customization</h4></div>
       <div id="h5"><h5>Optimization</h5></div>
-      <a onclick="changeAbout()" id="actionbtn">Learn More</a>
     </section>
 
     <section id="about">
@@ -45,11 +50,6 @@
         <p>If you'd like to inquire into our services please press the 'Contact' link. Thanks for the visit!</p>
       </div>
       <img src="/images/omar-gattis-1920.jpg" alt="drop-ripple-image" />
-      <div class="aboutlinks">
-        <a onclick="changeHome()">Home</a>
-        <a onclick="changeProjects()">Projects</a>
-        <a onclick="changeContact()">Contact</a>
-      </div>
     </section>
 
     <section id="projects">
@@ -58,11 +58,6 @@
         <p>We apologize however project links are currently undergoing updates.</p>
         <br />
         <p>Thanks for your patience.</p>
-      </div>
-      <div class="projectslinks">
-        <a onclick="changeHome()">Home</a>
-        <a onclick="changeAbout()">About</a>
-        <a onclick="changeContact()">Contact</a>
       </div>
     </section>
 
@@ -77,11 +72,6 @@
         <p>The layout of this page was created by Craig Kaufman</p>
         <br />
         <p>If you like what you see you can inquire directly at cdk11235@gmail.com</p>
-      </div>
-      <div class="contactlinks">
-        <a onclick="changeHome()">Home</a>
-        <a onclick="changeProjects()">Projects</a>
-        <a onclick="changeAbout()">About</a>
       </div>
     </section>
 

@@ -18,14 +18,13 @@ body {
   body {
     height: auto;
   }
-  
 }
 nav {
   height: 70px;
   width: 100vw;
   position: fixed;
-  top:0;
-  z-index: 3;   /* FIGURE OUT WHY THIS ISN'T WORKING!!!!*/
+  top: 0;
+  z-index: 3; /* FIGURE OUT WHY THIS ISN'T WORKING!!!!*/
 }
 label.logo a {
   font-family: "Russo One", sans-serif;
@@ -122,22 +121,206 @@ a {
 #link4.open {
   top: 0;
 }
-
-
-#menubox button:hover {
+#menubox a:hover {
   color: black;
   background: white;
   padding: 7px 13px;
   border-radius: 3px;
   transition: 0.7s;
 }
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  height: 75px;
+  width: 100vw;
+}
+#actionbtn {
+  height: 40px;
+  width: 140px;
+  position: absolute;
+  margin: auto;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+#actionbtn::before {
+  content: "";
+  background-image: conic-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(81, 255, 246));
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: -230px;
+  left: -170px;
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#actionbtn::after {
+  content: "LEARN MORE";
+  height: 95%;
+  width: 98%;
+  position: absolute;
+  background-color: black;
+  top: 3%;
+  left: 1%;
+  color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#actionbtn2 {
+  height: 40px;
+  width: 140px;
+  position: absolute;
+  margin: auto;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+#actionbtn2::before {
+  content: "";
+  background-image: conic-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(81, 255, 246));
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: -230px;
+  left: -170px;
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#actionbtn2::after {
+  content: "PROJECTS";
+  height: 95%;
+  width: 98%;
+  position: absolute;
+  background-color: black;
+  top: 3%;
+  left: 1%;
+  color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#actionbtn3 {
+  height: 40px;
+  width: 140px;
+  position: absolute;
+  margin: auto;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+#actionbtn3::before {
+  content: "";
+  background-image: conic-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(81, 255, 246));
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: -230px;
+  left: -170px;
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#actionbtn3::after {
+  content: "CONTACT";
+  height: 95%;
+  width: 98%;
+  position: absolute;
+  background-color: black;
+  top: 3%;
+  left: 1%;
+  color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#actionbtn4 {
+  height: 40px;
+  width: 140px;
+  position: absolute;
+  margin: auto;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+#actionbtn4::before {
+  content: "";
+  background-image: conic-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(81, 255, 246));
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: -230px;
+  left: -170px;
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#actionbtn4::after {
+  content: "HOME";
+  height: 95%;
+  width: 98%;
+  position: absolute;
+  background-color: black;
+  top: 3%;
+  left: 1%;
+  color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 footer {
   width: 100vw;
   position: fixed;
   bottom: 0px;
-  line-height: 25px;
+  height: 20px;
+  line-height: 20px;
   color: white;
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
 }
-

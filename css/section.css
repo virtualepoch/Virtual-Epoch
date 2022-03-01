@@ -103,50 +103,7 @@
   right: 0;
 }
 
-#actionbtn {
-  height: 50px;
-  width: 150px;
-  position: absolute;
-  margin: auto;
-  bottom: 50px;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-}
-#actionbtn::before {
-  content: "";
-  background-image: conic-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(81, 255, 246));
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  top: -230px;
-  left: -170px;
-  animation: rotate 4s infinite linear;
-}
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-#actionbtn::after {
-  content: "LEARN MORE";
-  height: 95%;
-  width: 98%;
-  position: absolute;
-  background-color: black;
-  top: 3%;
-  left: 1%;
-  color: rgb(255, 255, 255);
-  display: grid;
-  place-items: center;
-  font-size: 15px;
-  letter-spacing: 2px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 /*----------------------------------ABOUT--------------------------------*/
 #about {
   width: 100vw;
@@ -170,26 +127,7 @@
 #about img {
   width: 100vw;
 }
-.aboutlinks {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  right: 0;
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-evenly;
-}
-.aboutlinks a {
-  color: black;
-  background: white;
-  padding: 7px 17px;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-.aboutlinks a:hover {
-  background: black;
-  color: white;
-}
+
 /*---------------------------------PROJECTS-------------------------------*/
 #projects {
   width: 100vw;
@@ -213,26 +151,7 @@
 #projects img {
   width: 100vw;
 }
-.projectslinks {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  right: 0;
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-evenly;
-}
-.projectslinks a {
-  color: black;
-  background: white;
-  padding: 7px 17px;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-.projectslinks a:hover {
-  background: black;
-  color: white;
-}
+
 /*---------------------------------CONTACT-------------------------------*/
 #contact {
   width: 100vw;
@@ -256,23 +175,4 @@
 #contact img {
   width: 100vw;
 }
-.contactlinks {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  right: 0;
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-evenly;
-}
-.contactlinks a {
-  color: black;
-  background: white;
-  padding: 7px 17px;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-.contactlinks a:hover {
-  background: black;
-  color: white;
-}
+
