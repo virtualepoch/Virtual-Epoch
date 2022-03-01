@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/section.css" />
-
     <script src="https://kit.fontawesome.com/77ea0c8449.js" crossorigin="anonymous"></script>
     <title>virtual_epoch</title>
   </head>
@@ -19,11 +18,12 @@
         <i class="fas fa-bars"></i>
       </a>
     </nav>
+
     <div id="menubox">
-      <li id="link1"><a class="active" href="index.html">Home</a></li>
-      <li id="link2"><a href="projects.html">Projects</a></li>
-      <li id="link3"><a href="about.html">About</a></li>
-      <li id="link4"><a href="contact.html">Contact</a></li>
+      <li id="link1"><a onclick="changeHome()">Home</a></li>
+      <li id="link2"><a onclick="changeAbout()">About</a></li>
+      <li id="link3"><a onclick="changeProjects()">Projects</a></li>
+      <li id="link4"><a onclick="changeContact()">Contact</a></li>
     </div>
 
     <section id="home">
@@ -32,7 +32,7 @@
       <div id="h3"><h3>Developement</h3></div>
       <div id="h4"><h4>Customization</h4></div>
       <div id="h5"><h5>Optimization</h5></div>
-      <button onclick="changeAbout()" id="actionbtn">Learn More</button>
+      <a onclick="changeAbout()" id="actionbtn">Learn More</a>
     </section>
 
     <section id="about">
@@ -46,12 +46,45 @@
       </div>
       <img src="/images/omar-gattis-1920.jpg" alt="drop-ripple-image" />
       <div class="aboutlinks">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a onclick="changeHome()">Home</a>
+        <a onclick="changeProjects()">Projects</a>
+        <a onclick="changeContact()">Contact</a>
       </div>
     </section>
-    
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="projectscontent">
+        <p>We apologize however project links are currently undergoing updates.</p>
+        <br />
+        <p>Thanks for your patience.</p>
+      </div>
+      <div class="projectslinks">
+        <a onclick="changeHome()">Home</a>
+        <a onclick="changeAbout()">About</a>
+        <a onclick="changeContact()">Contact</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <div class="contactcontent">
+        <p>virtualepoch1@gmail.com</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>The layout of this page was created by Craig Kaufman</p>
+        <br />
+        <p>If you like what you see you can inquire directly at cdk11235@gmail.com</p>
+      </div>
+      <div class="contactlinks">
+        <a onclick="changeHome()">Home</a>
+        <a onclick="changeProjects()">Projects</a>
+        <a onclick="changeAbout()">About</a>
+      </div>
+    </section>
+
     <footer>&copy virtualepoch.com</footer>
     <script src="test.js"></script>
   </body>

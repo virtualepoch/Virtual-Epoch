@@ -58,7 +58,6 @@ label.logo:hover img {
   display: block;
 }
 #menubox {
-  color: white;
   position: fixed;
   width: 100vw;
   height: 100%;
@@ -73,6 +72,14 @@ label.logo:hover img {
 }
 #menubox.open {
   top: 0;
+}
+a {
+  padding: 5px;
+  color: white;
+  background: inherit;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 #link1 {
   color: white;
@@ -115,12 +122,9 @@ label.logo:hover img {
 #link4.open {
   top: 0;
 }
-#menubox a {
-  color: white;
-  font-size: 20px;
-}
-#menubox a.active,
-#menubox a:hover {
+
+
+#menubox button:hover {
   color: black;
   background: white;
   padding: 7px 13px;

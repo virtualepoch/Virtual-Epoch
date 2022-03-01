@@ -32,14 +32,55 @@ window.onload = function indexHtagAnim() {
   }
 };
 
+var home = document.getElementById("home");
+var about = document.getElementById("about");
+var projects = document.getElementById("projects");
+var contact = document.getElementById("contact");
+
+
+function changeHome() {
+  home.style.display = "block";
+  about.style.display = "none";
+  projects.style.display = "none";
+  contact.style.display = "none";
+  menubox.className = "";
+  link1.className = "";
+  link2.className = "";
+  link3.className = "";
+  link4.className = "";
+}
 
 function changeAbout() {
-  var home = document.getElementById("home");
-  var about = document.getElementById("about")
-  if (home.style.display === "none") {
-    home.style.display = "block";
-  } else {
-    home.style.display = "none";
-    about.style.display = "block";
-  }
+  home.style.display = "none";
+  about.style.display = "block";
+  projects.style.display = "none";
+  contact.style.display = "none";
+  menubox.className = "";
+  link1.className = "";
+  link2.className = "";
+  link3.className = "";
+  link4.className = "";
+}
+
+function changeProjects() {
+  home.style.display = "none";
+  about.style.display = "none";
+  projects.style.display = "block";
+  contact.style.display = "none";
+  menubox.className = "";
+  link1.className = "";
+  link2.className = "";
+  link3.className = "";
+  link4.className = "";
+}
+function changeContact() {
+  home.style.display = "none";
+  about.style.display = "none";
+  projects.style.display = "none";
+  contact.style.display = "block";
+  menubox.className = "";
+  link1.className = "";
+  link2.className = "";
+  link3.className = "";
+  link4.className = "";
 }
