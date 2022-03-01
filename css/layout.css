@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Roboto+Mono:wght@500&family=Russo+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto One", sans-serif;
+  overflow: hidden;
+  height: 100%;
+  width: 100vw;
+  background-color: rgb(19, 19, 19);
+}
+@media only screen and (min-width: 600px) {
+  body {
+    height: auto;
+  }
+  
+}
+nav {
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  top:0;
+  z-index: 3;   /* FIGURE OUT WHY THIS ISN'T WORKING!!!!*/
+}
+label.logo a {
+  font-family: "Russo One", sans-serif;
+  color: white;
+  font-size: 20px;
+  height: 70px;
+  line-height: 70px;
+}
+label.logo:hover {
+  border-bottom: 2px solid white;
+  transition: 0.7s;
+}
+label.logo img {
+  float: left;
+  border-radius: 50%;
+  margin: 5px 20px;
+  height: 60px;
+}
+label.logo:hover img {
+  border: 0.5px solid white;
+  transition: 0.7s;
+}
+#menubtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 70px;
+  padding: 0 20px;
+  cursor: pointer;
+  display: block;
+}
+#menubox {
+  color: white;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background: rgb(0, 30, 85);
+  margin-top: 70px;
+  margin-bottom: 30px;
+  top: -333%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  z-index: 1;
+}
+#menubox.open {
+  top: 0;
+}
+#link1 {
+  color: white;
+  position: fixed;
+  width: 100vw;
+  margin-top: 180px;
+  top: -333%;
+  transition: 1.1s;
+}
+#link1.open {
+  top: 0;
+}
+#link2 {
+  position: fixed;
+  width: 100vw;
+  margin-top: 250px;
+  top: -333%;
+  transition: 0.9s;
+}
+#link2.open {
+  top: 0;
+}
+#link3 {
+  position: fixed;
+  width: 100vw;
+  margin-top: 320px;
+  top: -333%;
+  transition: 0.7s;
+}
+#link3.open {
+  top: 0;
+}
+#link4 {
+  position: fixed;
+  width: 100vw;
+  margin-top: 390px;
+  top: -333%;
+  transition: 0.5s;
+}
+#link4.open {
+  top: 0;
+}
+#menubox a {
+  color: white;
+  font-size: 20px;
+}
+#menubox a.active,
+#menubox a:hover {
+  color: black;
+  background: white;
+  padding: 7px 13px;
+  border-radius: 3px;
+  transition: 0.7s;
+}
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+  line-height: 25px;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+

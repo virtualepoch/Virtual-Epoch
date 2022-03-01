@@ -1,0 +1,190 @@
+#home {
+  background-image: url(/images/blueice.jpg);
+  background-size: auto 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-transform: none;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  border: 1px dotted rgb(47, 47, 47);
+  justify-items: center;
+  margin-top: 70px;
+}
+
+#home h1,
+#about h1 {
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 5px;
+  border-right: 1px solid rgb(119, 119, 119);
+  border-bottom: 1px solid rgb(119, 119, 119, 0.5);
+  border-left: 1px solid rgb(119, 119, 119);
+  box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
+}
+#home h2 {
+  font-size: 25px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid rgb(61, 61, 61);
+  box-shadow: -5px 5px 6px rgba(255, 255, 255, 0.1);
+}
+#h2 {
+  position: fixed;
+  top: 140px;
+  left: 100%;
+  width: 100vw;
+}
+#h2.load {
+  transition: 1s ease;
+  left: 0;
+}
+#home h3 {
+  font-size: 25px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-right: 1px solid white;
+  border-top: 1px solid rgb(61, 61, 61);
+  box-shadow: 5px -5px 6px rgba(255, 255, 255, 0.1);
+}
+#h3 {
+  position: fixed;
+  top: 190px;
+  right: 100%;
+  width: 100vw;
+}
+#h3.load {
+  transition: 1s ease 0.5s;
+  right: 0;
+}
+#home h4 {
+  font-size: 25px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid rgb(61, 61, 61);
+  box-shadow: -5px 5px 6px rgba(255, 255, 255, 0.1);
+}
+#h4 {
+  position: fixed;
+  top: 270px;
+  left: 100%;
+  width: 100vw;
+}
+#h4.load {
+  transition: 1s ease 1s;
+  left: 0;
+}
+#home h5 {
+  font-size: 25px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-right: 1px solid white;
+  border-top: 1px solid rgb(61, 61, 61);
+  box-shadow: 5px -5px 6px rgba(255, 255, 255, 0.1);
+}
+#h5 {
+  position: fixed;
+  top: 320px;
+  right: 100%;
+  width: 100vw;
+}
+#h5.load {
+  transition: 1s ease 1.5s;
+  right: 0;
+}
+
+#actionbtn {
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  margin: auto;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+#actionbtn::before {
+  content: "";
+  background-image: conic-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(81, 255, 246));
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: -230px;
+  left: -170px;
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#actionbtn::after {
+  content: "LEARN MORE";
+  height: 95%;
+  width: 98%;
+  position: absolute;
+  background-color: black;
+  top: 3%;
+  left: 1%;
+  color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*------------------------------------------------------------------*/
+#about {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  margin-top: 70px;
+  font-size: 13px;
+  color: aliceblue;
+  background-color: black;
+  text-transform: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+}
+#about::-webkit-scrollbar {
+  display: none;
+}
+.aboutcontent {
+  padding: 20px;
+  text-align: center;
+}
+#about img{
+  width: 100vw;
+}
+.aboutlinks {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.aboutlinks a {
+  color: black;
+  background: white;
+  padding: 7px 17px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.aboutlinks a:hover {
+  background: black;
+  color: white;
+}

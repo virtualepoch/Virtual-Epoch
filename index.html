@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" media="screen and (min-width: 600px)" href="css/s-screen.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/section.css" />
+
     <script src="https://kit.fontawesome.com/77ea0c8449.js" crossorigin="anonymous"></script>
     <title>virtual_epoch</title>
   </head>
@@ -14,12 +15,9 @@
       <label class="logo">
         <a href="index.html"><img src="logos/velogo.png" alt="logo" />virtual_epoch</a>
       </label>
-
       <a id="menubtn">
         <i class="fas fa-bars"></i>
       </a>
-
-      
     </nav>
     <div id="menubox">
       <li id="link1"><a class="active" href="index.html">Home</a></li>
@@ -27,32 +25,33 @@
       <li id="link3"><a href="about.html">About</a></li>
       <li id="link4"><a href="contact.html">Contact</a></li>
     </div>
-    <section id="idex">
+
+    <section id="home">
       <h1>Progressive Web Apps</h1>
       <div id="h2"><h2>Design</h2></div>
       <div id="h3"><h3>Developement</h3></div>
       <div id="h4"><h4>Customization</h4></div>
       <div id="h5"><h5>Optimization</h5></div>
-      <div class="actionbutton">
-        <a href="about.html">Learn More</a>
-      </div>
+      <button onclick="changeAbout()" id="actionbtn">Learn More</button>
     </section>
+
     <section id="about">
-      <h1>We do Web Apps</h1>
+      <h1>Progressive Web Apps</h1>
       <div class="aboutcontent">
         <p>Here at virtualepoch.com we strive to exceed client/employer expectations and visions. We provide daily updates on project progress so you see it created in real time and direct wherever you want it to go.</p>
         <br />
         <p>We begin from the ground up. Using HTML, CSS, and JavaScript, we create the foundation of your virtual broadcast to the web. From there we can implement frameworks to further increase the positive user experience. Our favorite at the moment is SvelteKit. These frameworks will allow seamless loading and functionality.</p>
         <br />
-        <p>If you'd like to inquire into our services please press the 'Contact' link below. Thanks for the visit!</p>
-        <!--for the word 'press' above you could assign a variable and make it say 'click' on larger screens!!!!!!-->
+        <p>If you'd like to inquire into our services please press the 'Contact' link. Thanks for the visit!</p>
       </div>
+      <img src="/images/omar-gattis-1920.jpg" alt="drop-ripple-image" />
       <div class="aboutlinks">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
       </div>
     </section>
+    
     <footer>&copy virtualepoch.com</footer>
     <script src="test.js"></script>
   </body>

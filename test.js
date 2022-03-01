@@ -17,19 +17,29 @@ menubtn.onclick = function fnMenubox() {
     link4.className = "open";
   }
 };
-var index = document.getElementById("index")
+
 var h2 = document.getElementById("h2");
 var h3 = document.getElementById("h3");
 var h4 = document.getElementById("h4");
 var h5 = document.getElementById("h5");
 
-
-window.onload = function fnIndexHs(){
-  if (h2.className == ""){
+window.onload = function indexHtagAnim() {
+  if (h2.className == "") {
     h2.className = "load";
     h3.className = "load";
     h4.className = "load";
     h5.className = "load";
   }
-  
 };
+
+
+function changeAbout() {
+  var home = document.getElementById("home");
+  var about = document.getElementById("about")
+  if (home.style.display === "none") {
+    home.style.display = "block";
+  } else {
+    home.style.display = "none";
+    about.style.display = "block";
+  }
+}
