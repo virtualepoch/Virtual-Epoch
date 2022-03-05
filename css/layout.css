@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Roboto+Mono:wght@500&family=Russo+One&display=swap");
+@font-face {
+  font-family: Blackpast;
+  src: url(/fonts/BlackpastDemo-vm2l9.ttf);
+}
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  
 }
 body {
   font-family: "Roboto One", sans-serif;
@@ -148,7 +153,6 @@ a {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
   display: none;
-  z-index: 9;
 }
 #actionbtn::before {
   content: "";
@@ -180,6 +184,7 @@ a {
   letter-spacing: 2px;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 10;
 }
 #actionbtn2 {
   height: 40px;
