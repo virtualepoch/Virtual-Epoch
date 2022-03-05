@@ -67,6 +67,7 @@ label.logo:hover img {
   text-align: center;
   text-transform: uppercase;
   transition: all 0.5s;
+  overflow-y: scroll;
   z-index: 1;
 }
 #menubox.open {
