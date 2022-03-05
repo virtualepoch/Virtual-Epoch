@@ -10,6 +10,13 @@
   border: 1px dotted rgb(47, 47, 47);
   justify-items: center;
   margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#home::-webkit-scrollbar {
+  display: none;
 }
 
 #home h1,
@@ -26,83 +33,51 @@
   border-left: 1px solid rgb(119, 119, 119);
   box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
 }
-#home h2 {
+
+#h2,
+#h4 {
   font-size: 25px;
+  position: relative;
+  margin-top: 30px;
+  right: -444%;
+  width: 100vw;
   width: fit-content;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 5px 20px;
   border-left: 1px solid white;
   border-bottom: 1px solid rgb(61, 61, 61);
   box-shadow: -5px 5px 6px rgba(255, 255, 255, 0.1);
 }
-#h2 {
-  position: fixed;
-  top: 140px;
-  left: 100%;
-  width: 100vw;
+
+#h3,
+#h5 {
+  position: relative;
+  left: -444%;
+  font-size: 25px;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 5px 20px;
+  border-right: 1px solid white;
+  border-top: 1px solid rgb(61, 61, 61);
+  box-shadow: 5px -5px 6px rgba(255, 255, 255, 0.1);
 }
 #h2.load {
   transition: 1s ease;
-  left: 0;
-}
-#home h3 {
-  font-size: 25px;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 5px 20px;
-  border-right: 1px solid white;
-  border-top: 1px solid rgb(61, 61, 61);
-  box-shadow: 5px -5px 6px rgba(255, 255, 255, 0.1);
-}
-#h3 {
-  position: fixed;
-  top: 190px;
-  right: 100%;
-  width: 100vw;
+  right: 0;
 }
 #h3.load {
   transition: 1s ease 0.5s;
-  right: 0;
-}
-#home h4 {
-  font-size: 25px;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 5px 20px;
-  border-left: 1px solid white;
-  border-bottom: 1px solid rgb(61, 61, 61);
-  box-shadow: -5px 5px 6px rgba(255, 255, 255, 0.1);
-}
-#h4 {
-  position: fixed;
-  top: 270px;
-  left: 100%;
-  width: 100vw;
-}
-#h4.load {
-  transition: 1s ease 1s;
   left: 0;
 }
-#home h5 {
-  font-size: 25px;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 5px 20px;
-  border-right: 1px solid white;
-  border-top: 1px solid rgb(61, 61, 61);
-  box-shadow: 5px -5px 6px rgba(255, 255, 255, 0.1);
-}
-#h5 {
-  position: fixed;
-  top: 320px;
-  right: 100%;
-  width: 100vw;
+
+#h4.load {
+  transition: 1s ease 1s;
+  right: 0;
 }
 #h5.load {
   transition: 1s ease 1.5s;
-  right: 0;
+  left: 0;
 }
-
 
 /*----------------------------------ABOUT--------------------------------*/
 #about {
@@ -175,4 +150,3 @@
 #contact img {
   width: 100vw;
 }
-
