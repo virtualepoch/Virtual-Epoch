@@ -100,7 +100,7 @@
 }
 .projects-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 20px;
   padding-bottom: 400px;
   text-align: center;
@@ -130,6 +130,6 @@
   padding: 20px;
   }
 .profile-pic{
-  height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
