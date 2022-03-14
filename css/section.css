@@ -93,7 +93,6 @@
   background-position: center;
 }
 .about-content {
-  
   max-width: 800px;
 }
 #projects {
@@ -122,12 +121,6 @@
 }
 .text-box p{
   padding: 0 30px;
-  line-height: 25px;
-}
-.other-projects{
-  color:rgb(179, 255, 255);
-  padding: 40px;
-  margin-top: 100px;
   line-height: 25px;
 }
 #contact {
