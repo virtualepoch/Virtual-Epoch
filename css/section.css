@@ -6,7 +6,7 @@
   text-align: center;
   text-transform: none;
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   border: 1px dotted rgb(47, 47, 47);
   justify-items: center;
   margin-top: 60px;
@@ -15,10 +15,6 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
-#home::-webkit-scrollbar {
-  display: none;
-}
-
 #home h1,
 #about h1,
 #projects h1,
@@ -33,7 +29,6 @@
   border-left: 1px solid rgb(119, 119, 119);
   box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
 }
-
 #h2,
 #h4 {
   font-size: 15px;
@@ -48,7 +43,6 @@
   border-bottom: 1px solid rgb(61, 61, 61);
   box-shadow: -5px 5px 6px rgba(255, 255, 255, 0.1);
 }
-
 #h3,
 #h5 {
   position: relative;
@@ -78,11 +72,10 @@
   transition: 1s ease 1.5s;
   left: 0;
 }
-
 /*----------------------------------ABOUT--------------------------------*/
 #about {
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   margin-top: 60px;
   font-size: 13px;
   color: aliceblue;
@@ -92,21 +85,19 @@
   overflow-y: auto;
   display: none;
 }
-#about::-webkit-scrollbar {
-  display: none;
-}
 .aboutcontent {
+  max-width: 1000px;
+  margin: 50px auto;
   padding: 20px;
   text-align: center;
 }
 #about img {
   width: 100vw;
 }
-
 /*---------------------------------PROJECTS-------------------------------*/
 #projects {
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   margin-top: 60px;
   font-size: 13px;
   color: aliceblue;
@@ -114,9 +105,6 @@
   text-transform: none;
   overflow-x: hidden;
   overflow-y: auto;
-  display: none;
-}
-#projects::-webkit-scrollbar {
   display: none;
 }
 .projectscontent {
@@ -126,11 +114,10 @@
 #projects img {
   width: 100vw;
 }
-
 /*---------------------------------CONTACT-------------------------------*/
 #contact {
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   margin-top: 60px;
   font-size: 13px;
   color: aliceblue;
@@ -138,9 +125,6 @@
   text-transform: none;
   overflow-x: hidden;
   overflow-y: auto;
-  display: none;
-}
-#contact::-webkit-scrollbar {
   display: none;
 }
 .contactcontent {

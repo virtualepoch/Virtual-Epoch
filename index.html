@@ -12,25 +12,27 @@
 </head>
 
 <body>
+
   <nav>
     <img onclick="changeHome()" src="logos/velogo.png" alt="logo" />
-    <h1>virtual_epoch</h1>
-    <div id="menubtn">
+    <h1 onclick="changeHome()">virtual_epoch</h1>
+    <div id="menu-button" onclick="openMenu()">
       <i class="fa-solid fa-bars"></i>
     </div>
   </nav>
 
-  <div id="menubox">
-    <li id="link1"><a onclick="changeHome()">Home</a></li>
-    <li id="link2"><a onclick="changeAbout()">About</a></li>
-    <li id="link3"><a onclick="changeProjects()">Projects</a></li>
-    <li id="link4"><a onclick="changeContact()">Contact</a></li>
+  <div id="menu-box">
+    <li id="link1" onclick="changeHome()">Home</li>
+    <li id="link2" onclick="changeAbout()">About</li>
+    <li id="link3" onclick="changeProjects()">Projects</li>
+    <li id="link4" onclick="changeContact()">Contact</li>
   </div>
   <div class="bottom-nav">
-    <a onclick="changeAbout()" id="actionbtn">Learn More</a>
-    <a onclick="changeProjects()" id="actionbtn2">Projects</a>
-    <a onclick="changeContact()" id="actionbtn3">Contact</a>
-    <a onclick="changeHome()" id="actionbtn4">Home</a>
+    <div id="actionbtn">Learn More</div>
+    <li id="actionbtn-page-1" onclick="changeAbout()">LEARN MORE</li>
+    <li id="actionbtn-page-2" onclick="changeProjects()">PROJECTS</li>
+    <li id="actionbtn-page-3" onclick="changeContact()">CONTACT</li>
+    <li id="actionbtn-page-4" onclick="changeHome()">HOME</li>
   </div>
 
   <section id="home">
@@ -87,7 +89,7 @@
     </div>
   </section>
 
-  <footer>&copy virtualepoch.com</footer>
+  <footer>&copy www.virtualepoch.com</footer>
   <script src="test.js"></script>
 </body>
 

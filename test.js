@@ -1,16 +1,14 @@
-var menubox = document.getElementById("menubox");
-var menubtn = document.getElementById("menubtn");
-var link1 = document.getElementById("link1");
+var menu_box = document.getElementById("menu-box");
 
-menubtn.onclick = function fnMenubox() {
-  if (menubox.className == "open") {
-    menubox.className = "";
+function openMenu() {
+  if (menu_box.className == "open") {
+    menu_box.className = "";
     link1.className = "";
     link2.className = "";
     link3.className = "";
     link4.className = "";
   } else {
-    menubox.className = "open";
+    menu_box.className = "open";
     link1.className = "open";
     link2.className = "open";
     link3.className = "open";
@@ -38,10 +36,10 @@ var home = document.getElementById("home");
 var about = document.getElementById("about");
 var projects = document.getElementById("projects");
 var contact = document.getElementById("contact");
-var actionbtn = document.getElementById("actionbtn");
-var actionbtn2 = document.getElementById("actionbtn2");
-var actionbtn3 = document.getElementById("actionbtn3");
-var actionbtn4 = document.getElementById("actionbtn4");
+var actionbtn = document.getElementById("actionbtn-page-1");
+var actionbtn2 = document.getElementById("actionbtn-page-2");
+var actionbtn3 = document.getElementById("actionbtn-page-3");
+var actionbtn4 = document.getElementById("actionbtn-page-4");
 
 function changeHome() {
   home.style.display = "block";
@@ -52,7 +50,7 @@ function changeHome() {
   actionbtn2.style.display = "none";
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
-  menubox.className = "";
+  menu_box.className = "";
   link1.className = "";
   link2.className = "";
   link3.className = "";
@@ -67,7 +65,7 @@ function changeAbout() {
   actionbtn2.style.display = "block";
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
-  menubox.className = "";
+  menu_box.className = "";
   link1.className = "";
   link2.className = "";
   link3.className = "";
@@ -83,7 +81,7 @@ function changeProjects() {
   actionbtn2.style.display = "none";
   actionbtn3.style.display = "block";
   actionbtn4.style.display = "none";
-  menubox.className = "";
+  menu_box.className = "";
   link1.className = "";
   link2.className = "";
   link3.className = "";
@@ -98,7 +96,7 @@ function changeContact() {
   actionbtn2.style.display = "none";
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "block";
-  menubox.className = "";
+  menu_box.className = "";
   link1.className = "";
   link2.className = "";
   link3.className = "";
