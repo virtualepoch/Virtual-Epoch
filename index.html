@@ -1,81 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/section.css" />
-    <script src="https://kit.fontawesome.com/77ea0c8449.js" crossorigin="anonymous"></script>
-    <title>virtual_epoch</title>
-  </head>
-  <body>
-    <nav>
-      <label class="logo">
-        <a onclick="changeHome()"><img src="logos/velogo.png" alt="logo" />virtual_epoch</a>
-      </label>
-      <a id="menubtn">
-        <i class="fas fa-bars"></i>
-      </a>
-    </nav>
 
-    <div id="menubox">
-      <li id="link1"><a onclick="changeHome()">Home</a></li>
-      <li id="link2"><a onclick="changeAbout()">About</a></li>
-      <li id="link3"><a onclick="changeProjects()">Projects</a></li>
-      <li id="link4"><a onclick="changeContact()">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/section.css" />
+  <script src="https://kit.fontawesome.com/77ea0c8449.js" crossorigin="anonymous"></script>
+  <title>virtual_epoch</title>
+</head>
+
+<body>
+  <nav>
+    <img onclick="changeHome()" src="logos/velogo.png" alt="logo" />
+    <h1>virtual_epoch</h1>
+    <div id="menubtn">
+      <i class="fa-solid fa-bars"></i>
     </div>
-    <div class="bottom-nav">
-      <a onclick="changeAbout()" id="actionbtn">Learn More</a>
-      <a onclick="changeProjects()" id="actionbtn2">Projects</a>
-      <a onclick="changeContact()" id="actionbtn3">Contact</a>
-      <a onclick="changeHome()" id="actionbtn4">Home</a>
+  </nav>
+
+  <div id="menubox">
+    <li id="link1"><a onclick="changeHome()">Home</a></li>
+    <li id="link2"><a onclick="changeAbout()">About</a></li>
+    <li id="link3"><a onclick="changeProjects()">Projects</a></li>
+    <li id="link4"><a onclick="changeContact()">Contact</a></li>
+  </div>
+  <div class="bottom-nav">
+    <a onclick="changeAbout()" id="actionbtn">Learn More</a>
+    <a onclick="changeProjects()" id="actionbtn2">Projects</a>
+    <a onclick="changeContact()" id="actionbtn3">Contact</a>
+    <a onclick="changeHome()" id="actionbtn4">Home</a>
+  </div>
+
+  <section id="home">
+    <h1>Progressive Web Apps</h1>
+    <div id="h2">
+      <h2>Design</h2>
     </div>
+    <div id="h3">
+      <h2>Developement</h3>
+    </div>
+    <div id="h4">
+      <h2>Customization</h4>
+    </div>
+    <div id="h5">
+      <h2>Optimization</h5>
+    </div>
+  </section>
 
-    <section id="home">
-      <h1>Progressive Web Apps</h1>
-      <div id="h2"><h2>Design</h2></div>
-      <div id="h3"><h2>Developement</h3></div>
-      <div id="h4"><h2>Customization</h4></div>
-      <div id="h5"><h2>Optimization</h5></div>
-    </section>
+  <section id="about">
+    <h1>Progressive Web Apps</h1>
+    <div class="aboutcontent">
+      <p>Here at virtualepoch.com we strive to exceed client/employer expectations and visions. We provide daily updates
+        on project progress so you see it created in real time and direct wherever you want it to go.</p>
+      <br />
+      <p>We begin from the ground up. Using HTML, CSS, and JavaScript, we create the foundation of your virtual
+        broadcast to the web. From there we can implement frameworks to further increase the positive user experience.
+        Our favorite at the moment is SvelteKit. These frameworks will allow seamless loading and functionality.</p>
+      <br />
+      <p>If you'd like to inquire into our services please press the 'Contact' link. Thanks for the visit!</p>
+    </div>
+    <img src="/images/omar-gattis-1920.jpg" alt="drop-ripple-image" />
+  </section>
 
-    <section id="about">
-      <h1>Progressive Web Apps</h1>
-      <div class="aboutcontent">
-        <p>Here at virtualepoch.com we strive to exceed client/employer expectations and visions. We provide daily updates on project progress so you see it created in real time and direct wherever you want it to go.</p>
-        <br />
-        <p>We begin from the ground up. Using HTML, CSS, and JavaScript, we create the foundation of your virtual broadcast to the web. From there we can implement frameworks to further increase the positive user experience. Our favorite at the moment is SvelteKit. These frameworks will allow seamless loading and functionality.</p>
-        <br />
-        <p>If you'd like to inquire into our services please press the 'Contact' link. Thanks for the visit!</p>
-      </div>
-      <img src="/images/omar-gattis-1920.jpg" alt="drop-ripple-image" />
-    </section>
+  <section id="projects">
+    <h1>Projects</h1>
+    <div class="projectscontent">
+      <p>We apologize however project links are currently undergoing updates.</p>
+      <br />
+      <p>Thanks for your patience.</p>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h1>Projects</h1>
-      <div class="projectscontent">
-        <p>We apologize however project links are currently undergoing updates.</p>
-        <br />
-        <p>Thanks for your patience.</p>
-      </div>
-    </section>
+  <section id="contact">
+    <h1>Contact</h1>
+    <div class="contactcontent">
+      <p>virtualepoch1@gmail.com</p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <p>The layout of this page was created by Craig Kaufman</p>
+      <br />
+      <p>If you like what you see you can inquire directly at cdk11235@gmail.com</p>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h1>Contact</h1>
-      <div class="contactcontent">
-        <p>virtualepoch1@gmail.com</p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <p>The layout of this page was created by Craig Kaufman</p>
-        <br />
-        <p>If you like what you see you can inquire directly at cdk11235@gmail.com</p>
-      </div>
-    </section>
+  <footer>&copy virtualepoch.com</footer>
+  <script src="test.js"></script>
+</body>
 
-    <footer>&copy virtualepoch.com</footer>
-    <script src="test.js"></script>
-  </body>
 </html>

@@ -9,7 +9,7 @@
   height: calc(100vh - 100px);
   border: 1px dotted rgb(47, 47, 47);
   justify-items: center;
-  margin-top: 70px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -36,7 +36,7 @@
 
 #h2,
 #h4 {
-  font-size: 25px;
+  font-size: 15px;
   position: relative;
   margin-top: 30px;
   right: -444%;
@@ -53,7 +53,7 @@
 #h5 {
   position: relative;
   left: -444%;
-  font-size: 25px;
+  font-size: 15px;
   width: fit-content;
   margin: 10px auto;
   padding: 5px 20px;
@@ -83,7 +83,7 @@
 #about {
   width: 100vw;
   height: calc(100vh - 100px);
-  margin-top: 70px;
+  margin-top: 60px;
   font-size: 13px;
   color: aliceblue;
   background-color: black;
@@ -107,7 +107,7 @@
 #projects {
   width: 100vw;
   height: calc(100vh - 100px);
-  margin-top: 70px;
+  margin-top: 60px;
   font-size: 13px;
   color: aliceblue;
   background-color: black;
@@ -131,7 +131,7 @@
 #contact {
   width: 100vw;
   height: calc(100vh - 100px);
-  margin-top: 70px;
+  margin-top: 60px;
   font-size: 13px;
   color: aliceblue;
   background-color: black;
