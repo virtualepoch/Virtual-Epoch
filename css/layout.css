@@ -133,7 +133,7 @@ nav h1 {
   z-index: 20;
   color: white;
   position: fixed;
-  bottom: 35px;
+  bottom: 20px;
   left: 0;
   right: 0;
   height: 40px;
@@ -150,7 +150,7 @@ nav h1 {
   width: 140px;
   position: absolute;
   margin: auto;
-  bottom: 35px;
+  bottom: 20px;
   left: 0;
   right: 0;
   box-shadow: 0 0 35px rgba(148, 148, 148, 0.3);
@@ -197,6 +197,7 @@ footer {
   height: 20px;
   line-height: 20px;
   text-align: center;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 2px;
+  background-color: black;
 }
