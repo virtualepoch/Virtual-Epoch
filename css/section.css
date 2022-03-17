@@ -17,8 +17,7 @@
 #projects h1,
 #contact h1 {
   font-size: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: fit-content;
   padding: 5px;
   border-right: 1px solid rgb(119, 119, 119);
@@ -73,13 +72,13 @@
   transition: 1s ease 1.5s;
   left: 0;
 }
-/*--------ABOUT, PROJECTS, CONTACT CONTENT SECTIONS-----------------------------------------------------------*/
+/*==ABOUT=PROJECTS=CONTACT==CONTENT==VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
 .about-content,
 .projects-content,
 .contact-content {
   max-width: 1000px;
-  margin: 50px auto;
-  padding: 30px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: rgb(0, 0, 0, 0.9);
   font-size: 17px;
   text-align: center;
@@ -92,15 +91,16 @@
 }
 .about-content {
   max-width: 800px;
+  line-height: 30px;
 }
 #projects {
-  background-image: url(/images/negative-space-97077-lg-1280.jpg);
+  background-image: url(/images/markus-spiske-1089438-md-853.jpg);
 }
 .projects-content {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  padding-bottom: 400px;
+  padding-bottom: 100px;
   text-align: center;
 }
 .project-1-image {
@@ -122,30 +122,31 @@
   line-height: 25px;
 }
 #contact {
-  background-image: url(/images/negative-space-97077-lg-1280.jpg);
+  background-image: url(/images/markus-spiske-1089438-md-853.jpg);
 }
 .contact-content {
   padding: 20px;
-  padding-bottom: 1000px;
+  padding-bottom: 100px;
 }
 .profile-card {
   background-color: rgba(58, 58, 58, 0.9);
   border-radius: 10px;
   max-width: 500px;
   margin: 50px auto;
-  padding: 30px;
+  padding: 20px 10px;
   line-height: 30px;
   box-shadow: 0 0 5px 5px rgb(240, 248, 255, 0.5);
 }
 .profile-card p {
-  padding: 20px;
-  letter-spacing: 1px;
+  padding: 5px;
+  letter-spacing: 0px;
+  font-size: 15px;
 }
 .profile-pic {
   width: 70px;
   border-radius: 50%;
   float: left;
-  margin: 10px 20px 20px 10px;
+  margin: 10px;
 }
 .email-link {
   border: 1px solid aliceblue;
