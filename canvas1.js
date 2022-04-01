@@ -34,7 +34,7 @@ class Effect {
   constructor(canvasWidth, canvasHeight) {
     this.canvasWidth = canvasWidth;
     this.canvasHeight = canvasHeight;
-    this.fontSize = 20;
+    this.fontSize = 15;
     this.columns = this.canvasWidth / this.fontSize;
     this.symbols = [];
     this.#initialize();

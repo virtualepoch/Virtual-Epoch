@@ -34,6 +34,7 @@ canvas {
   border-bottom: 1px solid rgb(119, 119, 119, 0.5);
   border-left: 1px solid rgb(119, 119, 119);
   box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
+  background: black;
 }
 #home {
   background: black;
@@ -52,6 +53,7 @@ canvas {
   border-left: 1px solid white;
   border-bottom: 1px solid rgb(61, 61, 61);
   box-shadow: -5px 5px 6px rgba(255, 255, 255, 0.1);
+  background: rgb(0, 0, 0, 0.7);
 }
 #h3,
 #h5 {
@@ -65,6 +67,7 @@ canvas {
   border-right: 1px solid white;
   border-top: 1px solid rgb(61, 61, 61);
   box-shadow: 5px -5px 6px rgba(255, 255, 255, 0.1);
+  background: rgb(0, 0, 0, 0.7);
 }
 #h2.load {
   transition: 1s ease;
@@ -103,6 +106,7 @@ canvas {
 .about-content {
   max-width: 800px;
   line-height: 30px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 #projects {
@@ -111,9 +115,7 @@ canvas {
 .projects-content {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin-top: -30px;
-  padding-bottom: 100px;
+  padding: 40px 20px 100px 20px;
   text-align: center;
 }
 .project-1-image {
