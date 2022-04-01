@@ -14,10 +14,12 @@
 <body>
 
   <nav>
-    <img onclick="changeHome()" src="logos/velogo04edit2.png" alt="logo" />
-    <h1 onclick="changeHome()">virtual_epoch</h1>
-    <div id="menu-button" onclick="openMenu()">
-      <i class="fa-solid fa-bars"></i>
+    <div class="top-nav">
+      <img onclick="changeHome()" src="logos/velogo04edit2.png" alt="logo" />
+      <h1 onclick="changeHome()">virtual_epoch</h1>
+      <div id="menu-button" onclick="openMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
   </nav>
 
@@ -36,18 +38,19 @@
   </div>
 
   <section id="home">
+    <canvas id="canvas1"></canvas>
     <h1>Progressive Web Apps</h1>
     <div id="h2">
       <h2>Design</h2>
     </div>
     <div id="h3">
-      <h2>Developement</h3>
+      <h2>Developement</h2>
     </div>
     <div id="h4">
-      <h2>Customization</h4>
+      <h2>Customization</h2>
     </div>
     <div id="h5">
-      <h2>Optimization</h5>
+      <h2>Optimization</h2>
     </div>
   </section>
 
@@ -104,7 +107,8 @@
   </section>
 
   <footer>www.virtualepoch.com</footer>
-  <script src="test.js"></script>
+  <script src="main.js"></script>
+  <script src="canvas1.js"></script>
 </body>
 
 </html>

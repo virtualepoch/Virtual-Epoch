@@ -27,6 +27,16 @@ body {
   font-family: "Roboto One", sans-serif;
 }
 nav {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  z-index: 10;
+}
+.top-nav {
   max-width: 1200px;
   height: 60px;
   position: fixed;
@@ -80,7 +90,7 @@ nav h1 {
   transition: 0.5s;
   overflow-x: hidden;
   overflow-y: scroll;
-  z-index: 10;
+  z-index: 20;
 }
 #menu-box.open {
   top: 0;
@@ -123,6 +133,7 @@ nav h1 {
 .bottom-nav {
   position: fixed;
   bottom: 0;
+  z-index: 11;
   height: 75px;
   width: 100vw;
 }
@@ -188,12 +199,12 @@ nav h1 {
   letter-spacing: 2px;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 10;
 }
 footer {
   width: 100vw;
   position: fixed;
   bottom: 0px;
+  z-index: 11;
   height: 20px;
   line-height: 20px;
   text-align: center;

@@ -12,13 +12,23 @@
   background-color: black;
   text-align: center;
 }
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 #home h1,
 #about h1,
 #projects h1,
 #contact h1 {
+  position: fixed;
+  left: 0;
+  right: 0;
   font-size: 15px;
   margin: 0 auto;
   width: fit-content;
+  z-index: 11;
   padding: 5px;
   border-right: 1px solid rgb(119, 119, 119);
   border-bottom: 1px solid rgb(119, 119, 119, 0.5);
@@ -26,7 +36,7 @@
   box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
 }
 #home {
-  background-image: url(/images/blueice.jpg);
+  background: black;
   background-size: auto 100%;
 }
 #h2,
@@ -34,7 +44,7 @@
   font-size: 15px;
   position: relative;
   right: -444%;
-  width: 100vw;
+  z-index: 11;
   width: fit-content;
   margin: 10px auto;
   margin-top: 80px;
@@ -47,6 +57,7 @@
 #h5 {
   position: relative;
   left: -444%;
+  z-index: 11;
   font-size: 15px;
   width: fit-content;
   margin: 10px auto;
