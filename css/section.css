@@ -91,7 +91,7 @@ canvas {
 .projects-content,
 .contact-content {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 20px;
   background-color: rgb(0, 0, 0, 0.9);
   font-size: 17px;
@@ -109,7 +109,7 @@ canvas {
 }
 @media (max-width: 1000px) {
   .about-content {
-    padding: 50px;
+    padding: 20px 50px;
   }
 }
 #projects {
@@ -144,7 +144,17 @@ canvas {
   margin: 0 auto;
   background: rgb(34, 96, 162);
 }
-.link-container a {
+.link-container-2 {
+  width: 100px;
+  height: 50px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: relative;
+  top: -60px;
+  margin: 0 auto;
+  background: rgb(34, 96, 162);
+}
+.link-container a, 
+.link-container-2 a {
   position: relative;
   top: 27px;
   color: white;
