@@ -153,7 +153,7 @@ canvas {
   margin: 0 auto;
   background: rgb(34, 96, 162);
 }
-.link-container a, 
+.link-container a,
 .link-container-2 a {
   position: relative;
   top: 27px;
@@ -207,14 +207,17 @@ canvas {
   cursor: pointer;
   box-shadow: 0 0 5px 1px aliceblue;
 }
-.icon-link i {
-  display: block;
+.icon-link {
   width: fit-content;
+  display: block;
+  margin: 50px auto;
+}
+.icon-link i {
   border: 1px solid aliceblue;
   border-radius: 5px;
   padding: 10px;
-  margin: 50px auto;
   color: aliceblue;
+  cursor: pointer;
   font-size: 30px;
   box-shadow: 0 0 5px 1px aliceblue;
 }
