@@ -1,14 +1,14 @@
-var menu_box = document.getElementById("menu-box");
+var menuBox = document.getElementById("menu-box");
 
 function openMenu() {
-  if (menu_box.className == "open") {
-    menu_box.className = "";
+  if (menuBox.className == "open") {
+    menuBox.className = "";
     link1.className = "";
     link2.className = "";
     link3.className = "";
     link4.className = "";
   } else {
-    menu_box.className = "open";
+    menuBox.className = "open";
     link1.className = "open";
     link2.className = "open";
     link3.className = "open";
@@ -50,7 +50,7 @@ function changeHome() {
   actionbtn2.style.display = "none";
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
-  menu_box.className = "";
+  menuBox.className = "";
   link1.className = "";
   link2.className = "";
   link3.className = "";
@@ -65,7 +65,7 @@ function changeAbout() {
   actionbtn2.style.display = "block";
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
-  menu_box.className = "";
+  menuBox.className = "";
   link1.className = "";
   link2.className = "";
   link3.className = "";
@@ -81,7 +81,7 @@ function changeProjects() {
   actionbtn2.style.display = "none";
   actionbtn3.style.display = "block";
   actionbtn4.style.display = "none";
-  menu_box.className = "";
+  menuBox.className = "";
   link1.className = "";
   link2.className = "";
   link3.className = "";
@@ -96,7 +96,7 @@ function changeContact() {
   actionbtn2.style.display = "none";
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "block";
-  menu_box.className = "";
+  menuBox.className = "";
   link1.className = "";
   link2.className = "";
   link3.className = "";
