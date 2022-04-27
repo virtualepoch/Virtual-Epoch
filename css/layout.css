@@ -13,7 +13,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgb(255, 255, 255,.7);
+  -webkit-tap-highlight-color: rgb(255, 255, 255, 0.7);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "Cormorant", sans-serif;
@@ -50,7 +50,7 @@ nav {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  }
+}
 nav img {
   margin: auto 10px;
   height: 40px;
@@ -67,14 +67,13 @@ nav h1 {
   letter-spacing: 2px;
   line-height: 60px;
   cursor: pointer;
-  }
+}
 #menu-button {
   font-size: 25px;
   line-height: 60px;
   padding: 0 13px;
   cursor: pointer;
-  display: block;
-  }
+}
 #menu-box {
   height: calc(100vh - 80px);
   max-width: 1200px;
@@ -142,7 +141,6 @@ nav h1 {
 #actionbtn-page-2,
 #actionbtn-page-3,
 #actionbtn-page-4 {
-  z-index: 20;
   color: white;
   position: fixed;
   bottom: 20px;
@@ -190,10 +188,10 @@ nav h1 {
   height: 95%;
   width: 98%;
   position: absolute;
-  background-color: black;
   top: 3%;
   left: 1%;
   color: rgb(255, 255, 255);
+  background-color: black;
   display: grid;
   place-items: center;
   font-size: 15px;

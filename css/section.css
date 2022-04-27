@@ -9,7 +9,6 @@
   margin-top: 60px;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: black;
   text-align: center;
 }
 canvas {
@@ -39,10 +38,6 @@ canvas {
   padding: 50px 10px;
   font-size: 30px;
 }
-#home {
-  background: black;
-  background-size: auto 100%;
-}
 #h2,
 #h4 {
   font-size: 20px;
@@ -51,7 +46,7 @@ canvas {
   z-index: 11;
   width: fit-content;
   margin: 10px auto;
-  margin-top: 80px;
+  margin-top: 100px;
   padding: 5px 20px;
   border-left: 1px solid white;
   border-bottom: 1px solid rgb(61, 61, 61);
@@ -94,8 +89,9 @@ canvas {
 .projects-content,
 .contact-content {
   max-width: 1200px;
-  margin: 80px auto;
-  padding: 20px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 50px 15px;
   background-color: rgb(0, 0, 0, 0.9);
   font-size: 20px;
   text-align: center;
@@ -110,11 +106,7 @@ canvas {
   line-height: 30px;
   padding-bottom: 100px;
 }
-@media (max-width: 1000px) {
-  .about-content {
-    padding: 20px;
-  }
-}
+
 #projects {
   background: url(/images/blueice.jpg);
   background-size: auto 100%;
