@@ -18,10 +18,7 @@ canvas {
   left: 0;
   z-index: 1;
 }
-#home h1,
-#about h1,
-#projects h1,
-#contact h1 {
+#home h1 {
   position: fixed;
   left: 0;
   right: 0;
@@ -29,12 +26,18 @@ canvas {
   margin: 0 auto;
   width: fit-content;
   z-index: 11;
-  padding: 15px;
+  padding: 10px 15px;
   border-right: 1px solid rgb(119, 119, 119);
   border-bottom: 1px solid rgb(119, 119, 119, 0.5);
   border-left: 1px solid rgb(119, 119, 119);
   box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
   background: black;
+}
+#about h1,
+#projects h1,
+#contact h1 {
+  padding: 50px 10px;
+  font-size: 30px;
 }
 #home {
   background: black;
@@ -91,7 +94,7 @@ canvas {
 .projects-content,
 .contact-content {
   max-width: 1200px;
-  margin: 130px auto;
+  margin: 80px auto;
   padding: 20px;
   background-color: rgb(0, 0, 0, 0.9);
   font-size: 20px;
