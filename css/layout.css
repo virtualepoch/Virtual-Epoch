@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400&display=swap");
 @font-face {
   font-family: Blackpast;
   src: url(/fonts/BlackpastDemo-vm2l9.ttf);
@@ -13,7 +13,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Cormorant', sans-serif;
+  font-family: "Cormorant", sans-serif;
 }
 *::-webkit-scrollbar {
   display: none;
@@ -60,10 +60,9 @@ nav img:hover {
 }
 nav h1 {
   font-family: Blackpast;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 2px;
   line-height: 60px;
-  margin: 0 25px 0 0;
   cursor: pointer;
 }
 #menu-button {
