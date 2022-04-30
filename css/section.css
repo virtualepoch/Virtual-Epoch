@@ -122,7 +122,6 @@
   line-height: 30px;
   padding-bottom: 100px;
 }
-
 #projects {
   background: url(/images/blueice.jpg);
   background-size: auto 100%;
@@ -136,22 +135,23 @@
 #experiments-link {
   border: 2px solid blue;
   border-radius: 20px;
-  background: aliceblue;
-  padding: 0;
+ padding: 0;
   margin: 0 auto 50px auto;
   max-width: fit-content;
+  
 }
 #experiments-link a {
   display: block;
   border: solid rgb(82, 216, 231);
   border-radius: 20px;
+  color: aliceblue;
 }
-#experiments-link h1 {
+#experiments-link h2 {
   border: solid rgb(255, 255, 255);
   border-radius: 20px;
   height: min-content;
   line-height: 30px;
-  padding: 10px;
+  padding: 5px;
   font-size: 20px;
 }
 .project-1-images-container {
@@ -223,15 +223,6 @@
   z-index: 2;
   font-size: 20px;
   text-align: center;
-}
-#canvas2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(white, blue);
 }
 .profile-card {
   background-color: rgba(58, 58, 58, 0.9);

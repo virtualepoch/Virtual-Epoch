@@ -1,9 +1,9 @@
 const canvas = document.getElementById("canvas1");
-const ctx1 = canvas.getContext("2d");
+const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-let gradient = ctx1.createLinearGradient(canvas.width/10, 0, canvas.width, 0);
+let gradient = ctx.createLinearGradient(canvas.width/10, 0, canvas.width, 0);
 gradient.addColorStop(0, "cyan");
 gradient.addColorStop(0.5, "blue");
 gradient.addColorStop(1, "cyan");
@@ -64,12 +64,12 @@ function animate(timeStamp) {
   const deltaTime = timeStamp - lastTime;
   lastTime = timeStamp;
   if (timer > nextFrame) {
-    ctx1.fillStyle = "rgba(0,0,0,0.05)";
-    ctx1.textAlign = "center";
-    ctx1.fillRect(0, 0, canvas.width, canvas.height);
-    ctx1.fillStyle = gradient; // "green";
-    ctx1.font = effect.fontSize + "px monospace";
-    effect.symbols.forEach((symbol) => symbol.draw(ctx1));
+    ctx.fillStyle = "rgba(0,0,0,0.05)";
+    ctx.textAlign = "center";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = gradient; // "green";
+    ctx.font = effect.fontSize + "px monospace";
+    effect.symbols.forEach((symbol) => symbol.draw(ctx));
     timer = 0;
   } else {
     timer += deltaTime;
@@ -82,7 +82,7 @@ window.addEventListener("resize", function () {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   effect.resize(canvas.width, canvas.height);
-  gradient = ctx1.createLinearGradient(canvas.width/10, 0, canvas.width, 0);
+  gradient = ctx.createLinearGradient(canvas.width/10, 0, canvas.width, 0);
 gradient.addColorStop(0, "cyan");
 gradient.addColorStop(0.5, "blue");
 gradient.addColorStop(1, "cyan");
