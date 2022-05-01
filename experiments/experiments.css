@@ -18,17 +18,19 @@ h1 {
   font-size: 20px;
   color: darkblue;
   width: fit-content;
-  background: rgb(255, 255, 255,.7);
+  background: rgb(255, 255, 255, 0.7);
 }
 #canvas1 {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1000px;
   height: 100%;
   background: radial-gradient(white, blue);
 }
-.back-button{
+.back-button {
   position: fixed;
   bottom: 20px;
   left: 0;
@@ -40,5 +42,5 @@ h1 {
   font-size: 20px;
   color: darkblue;
   width: fit-content;
-  background: rgb(255, 255, 255,.7);
+  background: rgb(255, 255, 255, 0.7);
 }
