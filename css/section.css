@@ -135,10 +135,9 @@
 #experiments-link {
   border: 2px solid blue;
   border-radius: 20px;
- padding: 0;
+  padding: 0;
   margin: 0 auto 50px auto;
   max-width: fit-content;
-  
 }
 #experiments-link a {
   display: block;
@@ -270,4 +269,17 @@
   cursor: pointer;
   font-size: 30px;
   box-shadow: 0 0 5px 1px aliceblue;
+}
+.resume-link p {
+  color: white;
+  font-size: 17px;
+  padding: 5px 0;
+  background: black;
+}
+.w3c-css-icon {
+  margin: 50px auto;
+  border: 1px solid aliceblue;
+  box-shadow: 0 0 5px 1px aliceblue;
+  width: 85px;
+  height: 33px;
 }
