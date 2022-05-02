@@ -121,7 +121,7 @@ nav h1 {
 #link4 {
   transition: 0.5s;
 }
-#menu-box li:hover {
+#menu-box div:hover {
   color: black;
   background: white;
   padding: 7px 13px;
