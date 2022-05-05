@@ -38,13 +38,10 @@
 #contact h1 {
   width: fit-content;
   margin: 50px auto 20px auto;
-  padding: 20px;
+  padding: 15px;
   font-size: 30px;
   border-bottom: 2px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  border-radius: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: radial-gradient(farthest-corner at 50% 100%, rgb(202, 201, 201), rgb(151, 151, 151) 20%, rgb(0, 0, 0) 70%);
 }
 #h2,
 #h4 {
@@ -113,18 +110,15 @@
   text-align: center;
 }
 #about {
-  background-image: url(/images/omar-gattis-640.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(/images/omar-gattis-640.jpg) center/cover;
 }
 .about-content {
   line-height: 30px;
   padding-bottom: 100px;
+  margin-bottom: 1000px;
 }
 #projects {
-  background: url(/images/blueice.jpg);
-  background-size: auto 100%;
+  background: url(/images/blueice.jpg) center/cover;
 }
 .projects-content {
   display: flex;
@@ -132,26 +126,24 @@
   padding: 40px 20px 100px 20px;
   text-align: center;
 }
-#experiments-link {
-  border: 2px solid blue;
+#javascriptive-link {
+  background: linear-gradient(to top right, black, rgb(106, 106, 106), black);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
-  padding: 0;
-  margin: 0 auto 50px auto;
+  margin: 50px auto;
   max-width: fit-content;
 }
-#experiments-link a {
+#javascriptive-link a {
   display: block;
-  border: solid rgb(82, 216, 231);
   border-radius: 20px;
   color: aliceblue;
 }
-#experiments-link h2 {
-  border: solid rgb(255, 255, 255);
+#javascriptive-link h2 {
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 20px;
-  height: min-content;
   line-height: 30px;
-  padding: 5px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 25px;
 }
 .project-1-images-container {
   display: flex;
@@ -224,7 +216,7 @@
   text-align: center;
 }
 .profile-card {
-  background-color: rgba(58, 58, 58, 0.9);
+  background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
   border-radius: 10px;
   max-width: 500px;
   margin: 20px auto;
@@ -244,7 +236,7 @@
   margin: 10px;
 }
 .email-link {
-  background-color: rgba(58, 58, 58, 0.9);
+  background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
   border: 1px solid aliceblue;
   border-radius: 7px;
   width: fit-content;
@@ -256,7 +248,7 @@
   box-shadow: 0 0 5px 1px aliceblue;
 }
 .icon-link {
-  background-color: rgba(58, 58, 58, 0.9);
+  background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
   width: fit-content;
   display: block;
   margin: 50px auto;
