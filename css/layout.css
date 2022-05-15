@@ -91,6 +91,9 @@ nav h1 {
   overflow-y: scroll;
   z-index: 110;
 }
+a{
+  color: aliceblue;
+}
 #menu-box.open {
   top: 0;
 }
