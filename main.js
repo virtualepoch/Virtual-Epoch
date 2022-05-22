@@ -1,18 +1,18 @@
 const menuBox = document.getElementById("menu-box");
 
 function openMenu() {
-  if (menuBox.className == "open") {
-    menuBox.className = "";
-    link1.className = "";
-    link2.className = "";
-    link3.className = "";
-    link4.className = "";
+  if (menuBox.style.top == "") {
+    menuBox.style.top = "0";
+    link1.style.top = "0";
+    link2.style.top = "0";
+    link3.style.top = "0";
+    link4.style.top = "0";
   } else {
-    menuBox.className = "open";
-    link1.className = "open";
-    link2.className = "open";
-    link3.className = "open";
-    link4.className = "open";
+    menuBox.style.top = "";
+    link1.style.top = "";
+    link2.style.top = "";
+    link3.style.top = "";
+    link4.style.top = "";
   }
 }
 
@@ -50,11 +50,7 @@ function changeHome() {
   actionbtn2.style.display = "none";
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
-  menuBox.className = "";
-  link1.className = "";
-  link2.className = "";
-  link3.className = "";
-  link4.className = "";
+  menuBox.style.top = "";
 }
 function changeAbout() {
   home.style.display = "none";
@@ -65,13 +61,8 @@ function changeAbout() {
   actionbtn2.style.display = "block";
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
-  menuBox.className = "";
-  link1.className = "";
-  link2.className = "";
-  link3.className = "";
-  link4.className = "";
+  menuBox.style.top = "";
 }
-
 function changeProjects() {
   home.style.display = "none";
   about.style.display = "none";
@@ -81,11 +72,7 @@ function changeProjects() {
   actionbtn2.style.display = "none";
   actionbtn3.style.display = "block";
   actionbtn4.style.display = "none";
-  menuBox.className = "";
-  link1.className = "";
-  link2.className = "";
-  link3.className = "";
-  link4.className = "";
+  menuBox.style.top = "";
 }
 function changeContact() {
   home.style.display = "none";
@@ -96,9 +83,5 @@ function changeContact() {
   actionbtn2.style.display = "none";
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "block";
-  menuBox.className = "";
-  link1.className = "";
-  link2.className = "";
-  link3.className = "";
-  link4.className = "";
+  menuBox.style.top = "";
 }

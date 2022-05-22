@@ -18,6 +18,17 @@
   z-index: 10;
   background: black;
 }
+#canvas2 {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+  z-index: 1;
+  background: black;
+}
 #home h1 {
   position: fixed;
   left: 0;
@@ -37,8 +48,8 @@
 #projects h1,
 #contact h1 {
   width: fit-content;
-  margin: 50px auto 20px auto;
-  padding: 15px;
+  margin: 20px auto;
+  padding: 10px;
   font-size: 30px;
   border-bottom: 2px solid white;
   background: radial-gradient(farthest-corner at 50% 100%, rgb(202, 201, 201), rgb(151, 151, 151) 20%, rgb(0, 0, 0) 70%);
@@ -209,7 +220,7 @@
   max-width: 1200px;
   min-height: 100%;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 20px;
   position: relative;
   z-index: 2;
   font-size: 20px;

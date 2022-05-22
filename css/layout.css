@@ -97,9 +97,9 @@ a {
   color: aliceblue;
   transition: 1s ease-in-out;
 }
-#menu-box.open {
+/* #menu-box.open {
   top: 0;
-}
+} */
 #link1,
 #link2,
 #link3,
@@ -108,12 +108,6 @@ a {
   position: relative;
   margin: 40px auto;
   top: -444%;
-}
-#link1.open,
-#link2.open,
-#link3.open,
-#link4.open {
-  top: 0;
 }
 #link1 {
   transition: 1.1s;
