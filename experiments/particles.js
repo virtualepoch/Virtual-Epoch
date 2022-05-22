@@ -74,7 +74,7 @@ class Particle {
 function init() {
   particlesArray = [];
   let numberOfParticles = (canvas2.height * canvas2.width) / 9000;
-  for (let i = 0; i < numberOfParticles * 3; i++) {
+  for (let i = 0; i < numberOfParticles * 4; i++) {
     let size = Math.random() * 5 + 1;
     let x = Math.random() * (innerWidth - size * 2 - size * 2) + size * 2;
     let y = Math.random() * (innerHeight - size * 2 - size * 2) + size * 2;
@@ -108,7 +108,7 @@ function connect() {
 // animation loop
 function animate() {
   requestAnimationFrame(animate);
-  ctx2.clearRect(0, 0, innerWidth, innerHeight);
+  // ctx2.clearRect(0, 0, innerWidth, innerHeight);
 
   for (let i = 0; i < particlesArray.length; i++) {
     particlesArray[i].update();
