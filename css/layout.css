@@ -51,25 +51,28 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.top-nav img {
-  margin: auto 10px;
+.site-logo {
   height: 40px;
+  width: 40px;
+  margin: 10px;
   border-radius: 50%;
+  background: url(/logos/virtual-epoch-logo-04-edit-200.png) 50% 50% / 100%;
 }
-.top-nav img:hover {
+.site-logo:hover {
   border: 1px solid white;
 }
-nav h1 {
+.nav-header {
   font-family: Blackpast;
   font-size: 20px;
   letter-spacing: 2px;
   line-height: 60px;
   cursor: pointer;
 }
-#menu-button {
-  font-size: 25px;
-  line-height: 60px;
-  padding: 0 13px;
+.menu-button {
+  height: 60px;
+  width: 60px;
+  background: url(/icons/bars-solid-white.svg) 50% 50% no-repeat;
+  background-size: 40%;
   cursor: pointer;
 }
 #menu-box {
