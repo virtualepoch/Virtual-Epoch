@@ -131,7 +131,7 @@ a {
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  z-index: 11;
+  z-index: 1111;
   height: 75px;
   width: 100vw;
 }
