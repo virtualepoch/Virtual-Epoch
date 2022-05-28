@@ -23,7 +23,7 @@
 }
 body {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   background: rgb(0, 0, 0);
   color: #d7d7d7;
@@ -132,6 +132,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin: 60px auto 0 auto;
+  padding-bottom: 60px;
   background: rgb(0, 0, 0);
   text-align: center;
   font-size: 25px;
@@ -157,12 +158,12 @@ a {
 #link4 {
   color: aliceblue;
   position: relative;
-  margin: 40px auto;
+  margin: 33px auto;
   top: -444%;
 }
 #link1 {
   transition: 1.1s;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 #link2 {
   transition: 0.9s;
