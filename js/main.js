@@ -31,8 +31,8 @@ window.onload = function loadHome() {
 };
 
 const menuBtn = document.querySelector(".menu-btn");
-
 let menuOpen = false;
+
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
     menuBtn.classList.add("open");
@@ -41,6 +41,19 @@ menuBtn.addEventListener("click", () => {
     menuBtn.classList.remove("open");
     menuOpen = false;
   }
+});
+
+menuBtn.addEventListener("touchstart", function () {
+  menuBtn.style.boxShadow = "none";
+});
+menuBtn.addEventListener("touchend", function () {
+  menuBtn.style.boxShadow = "";
+});
+menuBtn.addEventListener("mousedown", function () {
+  menuBtn.style.boxShadow = "none";
+});
+menuBtn.addEventListener("mouseup", function () {
+  menuBtn.style.boxShadow = "";
 });
 
 const menuBox = document.getElementById("menu-box");

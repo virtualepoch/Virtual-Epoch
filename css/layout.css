@@ -87,7 +87,6 @@ nav {
   border-radius: 2px;
   box-shadow: 0 0 3px 1px rgb(255, 255, 255);
   transition: all 0.5s ease-in-out;
-  animation: glow 4s infinite ease-in-out;
 }
 .menu-btn-burger::before,
 .menu-btn-burger::after {
@@ -99,12 +98,7 @@ nav {
   border-radius: 2px;
   box-shadow: 0 0 3px 1px rgb(255, 255, 255);
   transition: all 0.5s ease-in-out;
-  animation: glow 4s infinite ease-in-out;
-}
-@keyframes glow {
-  50% {
-    box-shadow: none;
-  }
+
 }
 .menu-btn-burger::before {
   transform: translateY(-7px);
