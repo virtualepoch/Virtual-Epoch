@@ -28,6 +28,7 @@ body {
   background: rgb(0, 0, 0);
   color: #d7d7d7;
 }
+/* // TOP NAVIGATION BAR ////////////////////////////////////////// */
 nav {
   width: 100vw;
   height: 60px;
@@ -68,13 +69,63 @@ nav {
   line-height: 60px;
   cursor: pointer;
 }
-.menu-button {
-  height: 60px;
-  width: 60px;
-  background: url(/icons/bars-solid-white.svg) 50% 50% no-repeat;
-  background-size: 40%;
+/* // MENU BUTTON STYLING ///////////////////////////////////////// */
+.menu-btn {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 1px -1px 5px 2px rgb(255, 255, 255, 0.3) inset;
 }
+.menu-btn-burger {
+  width: 25px;
+  height: 1px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 0 3px 1px rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+  animation: glow 4s infinite ease-in-out;
+}
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 0 3px 1px rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+  animation: glow 4s infinite ease-in-out;
+}
+@keyframes glow {
+  50% {
+    box-shadow: none;
+  }
+}
+.menu-btn-burger::before {
+  transform: translateY(-7px);
+}
+.menu-btn-burger::after {
+  transform: translateY(7px);
+}
+/* BUTTON ANIMATION  */
+.menu-btn.open .menu-btn-burger {
+  /* transform: translateX(-50px); */
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg);
+}
+.menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg);
+}
+/* // MENU BOX STYLING ///////////////////////////////////////////// */
 #menu-box {
   height: calc(100vh - 80px);
   max-width: 1200px;
