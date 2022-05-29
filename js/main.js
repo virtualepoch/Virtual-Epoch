@@ -84,6 +84,8 @@ function changeHome() {
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
   menuBox.style.top = "";
+  menuBtn.classList.remove("open");
+  menuOpen = false;
 }
 
 function changeAbout() {
@@ -96,6 +98,8 @@ function changeAbout() {
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "none";
   menuBox.style.top = "";
+  menuBtn.classList.remove("open");
+  menuOpen = false;
 }
 function changeProjects() {
   home.style.display = "none";
@@ -107,6 +111,8 @@ function changeProjects() {
   actionbtn3.style.display = "block";
   actionbtn4.style.display = "none";
   menuBox.style.top = "";
+  menuBtn.classList.remove("open");
+  menuOpen = false;
 }
 function changeContact() {
   home.style.display = "none";
@@ -118,4 +124,6 @@ function changeContact() {
   actionbtn3.style.display = "none";
   actionbtn4.style.display = "block";
   menuBox.style.top = "";
+  menuBtn.classList.remove("open");
+  menuOpen = false;
 }
