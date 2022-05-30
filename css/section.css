@@ -77,7 +77,6 @@ section {
   transition: 1s ease 0.5s;
   left: 0;
 }
-
 #h4.load {
   transition: 1s ease 1s;
   right: 0;

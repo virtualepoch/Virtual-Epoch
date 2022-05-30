@@ -179,10 +179,10 @@ a {
   height: 75px;
   width: 100vw;
 }
-#actionbtn-page-1,
-#actionbtn-page-2,
-#actionbtn-page-3,
-#actionbtn-page-4 {
+#action-btn-page-1,
+#action-btn-page-2,
+#action-btn-page-3,
+#action-btn-page-4 {
   color: white;
   position: fixed;
   bottom: 20px;
@@ -197,7 +197,7 @@ a {
   letter-spacing: 1px;
   cursor: pointer;
 }
-#actionbtn {
+#action-btn {
   height: 40px;
   width: 140px;
   position: absolute;
@@ -210,7 +210,7 @@ a {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
 }
-#actionbtn::before {
+#action-btn::before {
   content: "";
   background-image: conic-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(81, 255, 246));
   height: 500px;
@@ -225,7 +225,7 @@ a {
     transform: rotate(360deg);
   }
 }
-#actionbtn::after {
+#action-btn::after {
   content: "";
   height: 95%;
   width: 98%;
