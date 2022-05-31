@@ -4,7 +4,6 @@ section {
   position: fixed;
   top: 55px;
   text-align: center;
-  border: 1px dotted rgb(47, 47, 47);
   overflow-y: auto;
 }
 #canvas1 {
