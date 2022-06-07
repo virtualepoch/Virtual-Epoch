@@ -189,6 +189,11 @@ nav {
   color: white;
   cursor: pointer;
 }
+#action-btn-page-2,
+#action-btn-page-3,
+#action-btn-page-4{
+  display: none;
+}
 #action-btn {
   width: 140px;
   height: 40px;

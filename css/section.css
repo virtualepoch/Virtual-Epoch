@@ -4,6 +4,7 @@ section {
   position: fixed;
   top: 55px;
   text-align: center;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 #canvas1 {
@@ -26,16 +27,6 @@ section {
   border-left: 1px solid rgb(119, 119, 119);
   box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
   background: black;
-}
-#about h1,
-#projects h1,
-#contact h1 {
-  width: fit-content;
-  margin: 20px auto;
-  padding: 10px;
-  font-size: 30px;
-  border-bottom: 2px solid white;
-  background: radial-gradient(farthest-corner at 50% 100%, rgb(202, 201, 201), rgb(151, 151, 151) 20%, rgb(0, 0, 0) 70%);
 }
 #h2,
 #h4 {
@@ -90,6 +81,21 @@ section {
     display: inline-block;
     font-size: 10px;
   }
+}
+#about,
+#projects,
+#contact{
+  display: none;
+}
+#about h1,
+#projects h1,
+#contact h1 {
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  background: radial-gradient(farthest-corner at 50% 100%, rgb(202, 201, 201), rgb(151, 151, 151) 20%, rgb(0, 0, 0) 70%);
 }
 /*==ABOUT=PROJECTS=CONTACT==CONTENT==VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
 .about-content,
