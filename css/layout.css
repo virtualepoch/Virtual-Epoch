@@ -19,7 +19,7 @@
 }
 body {
   height: 100vh;
-  background: rgb(0, 0, 0);
+  background: black;
   color: #d7d7d7;
 }
 a {
@@ -28,6 +28,7 @@ a {
 /* // TOP NAVIGATION BAR ////////////////////////////////////////// */
 nav {
   width: 100vw;
+  height: 55px;
   position: fixed;
   top: 0;
   z-index: 11111;
@@ -43,7 +44,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to right, black, rgb(111, 111, 111), black);
+  background: linear-gradient(to right, rgb(0, 0, 0,0), rgb(111, 111, 111), rgb(0, 0, 0,0));
 }
 .site-logo {
   width: 40px;
@@ -73,6 +74,7 @@ nav {
   cursor: pointer;
   transition: 0.1s ease-in-out;
   box-shadow: 1px -1px 5px 2px rgb(255, 255, 255, 0.3) inset;
+  background: rgb(0, 0, 0,.7);
 }
 .menu-btn-bars {
   width: 25px;
@@ -191,7 +193,7 @@ nav {
 }
 #action-btn-page-2,
 #action-btn-page-3,
-#action-btn-page-4{
+#action-btn-page-4 {
   display: none;
 }
 #action-btn {
@@ -249,5 +251,5 @@ footer {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 2px;
-  background: linear-gradient(to right, black, rgb(111, 111, 111), black);
+  background: linear-gradient(to right, rgb(0, 0, 0,0), rgb(111, 111, 111), rgb(0, 0, 0,0));
 }
