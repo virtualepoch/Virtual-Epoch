@@ -33,16 +33,16 @@ let menuOpen = false;
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
     menuBtn.classList.add("open");
+    menuBox.classList.add("open");
     menuOpen = true;
-    menuBox.style.top = "0";
     link1.style.top = "0";
     link2.style.top = "0";
     link3.style.top = "0";
     link4.style.top = "0";
   } else {
     menuBtn.classList.remove("open");
+    menuBox.classList.remove("open");
     menuOpen = false;
-    menuBox.style.top = "";
     link1.style.top = "";
     link2.style.top = "";
     link3.style.top = "";
@@ -72,7 +72,7 @@ function changeHome() {
   actionBtn2.style.display = "none";
   actionBtn3.style.display = "none";
   actionBtn4.style.display = "none";
-  menuBox.style.top = "";
+  menuBox.classList.remove("open");
   menuBtn.classList.remove("open");
   menuOpen = false;
 }
@@ -85,7 +85,7 @@ function changeAbout() {
   actionBtn2.style.display = "block";
   actionBtn3.style.display = "none";
   actionBtn4.style.display = "none";
-  menuBox.style.top = "";
+  menuBox.classList.remove("open");
   menuBtn.classList.remove("open");
   menuOpen = false;
 }
@@ -98,7 +98,7 @@ function changeProjects() {
   actionBtn2.style.display = "none";
   actionBtn3.style.display = "block";
   actionBtn4.style.display = "none";
-  menuBox.style.top = "";
+  menuBox.classList.remove("open");
   menuBtn.classList.remove("open");
   menuOpen = false;
 }
@@ -111,7 +111,7 @@ function changeContact() {
   actionBtn2.style.display = "none";
   actionBtn3.style.display = "none";
   actionBtn4.style.display = "block";
-  menuBox.style.top = "";
+  menuBox.classList.remove("open");
   menuBtn.classList.remove("open");
   menuOpen = false;
 }
