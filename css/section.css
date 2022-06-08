@@ -4,6 +4,7 @@ section {
   position: fixed;
   top: 55px;
   text-align: center;
+  font-size: 20px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -19,7 +20,6 @@ section {
   left: 0;
   right: 0;
   z-index: 11;
-  font-size: 20px;
   margin: 0 auto;
   padding: 10px 15px;
   border-right: 1px solid rgb(119, 119, 119);
@@ -37,7 +37,6 @@ section {
   margin: 10px auto;
   margin-top: 100px;
   padding: 5px 20px;
-  font-size: 20px;
   border-left: 1px solid white;
   border-bottom: 1px solid rgb(61, 61, 61);
   box-shadow: -5px 5px 6px rgba(255, 255, 255, 0.1);
@@ -51,7 +50,6 @@ section {
   z-index: 11;
   margin: 10px auto;
   padding: 5px 20px;
-  font-size: 20px;
   border-right: 1px solid white;
   border-top: 1px solid rgb(61, 61, 61);
   box-shadow: 5px -5px 6px rgba(255, 255, 255, 0.1);
@@ -84,7 +82,7 @@ section {
 }
 #about,
 #projects,
-#contact{
+#contact {
   display: none;
 }
 #about h1,
@@ -102,10 +100,8 @@ section {
 .projects-content {
   max-width: 1200px;
   min-height: 100%;
-  text-align: center;
   margin: 0 auto;
   padding: 20px;
-  font-size: 20px;
   background-color: rgb(0, 0, 0, 0.8);
 }
 #about {
@@ -191,7 +187,6 @@ section {
   display: flex;
   flex-direction: column;
   padding: 40px 20px 100px 20px;
-  text-align: center;
 }
 #javascriptive-link {
   background: linear-gradient(to top right, black, rgb(106, 106, 106), black);
@@ -272,6 +267,7 @@ section {
   padding: 0 15px 40px 15px;
   line-height: 25px;
 }
+/* CONTACT SECTION STYLING //////////////////////////////////////////// */
 .contact-content {
   max-width: 1200px;
   min-height: 100%;
@@ -279,8 +275,12 @@ section {
   z-index: 2;
   margin: 0 auto;
   padding: 20px;
-  text-align: center;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-content div,
+.contact-content a {
+  background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
 }
 .profile-card {
   max-width: 500px;
@@ -289,7 +289,6 @@ section {
   line-height: 30px;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgb(240, 248, 255, 0.5);
-  background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
 }
 .profile-card p {
   padding: 5px;
@@ -309,31 +308,35 @@ section {
   margin: 100px auto 0 auto;
   border: 1px solid aliceblue;
   border-radius: 7px;
-  color: aliceblue;
-  cursor: pointer;
   box-shadow: 0 0 5px 1px aliceblue;
-  background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
 }
 .icon-link {
   width: fit-content;
-  display: block;
+  height: fit-content;
   margin: 50px auto;
-  background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
-}
-.icon-link i {
   border: 1px solid aliceblue;
   border-radius: 5px;
-  padding: 10px;
-  color: aliceblue;
-  cursor: pointer;
-  font-size: 30px;
   box-shadow: 0 0 5px 1px aliceblue;
+}
+.icon-link i {
+  padding: 10px;
+  font-size: 30px;
+}
+.resume-link {
+  border: none;
+  box-shadow: none;
+  background: black;
 }
 .resume-link p {
   padding: 5px 0;
-  color: white;
   font-size: 17px;
   background: black;
+}
+.resume-link i {
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px aliceblue;
+  background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
 }
 .w3c-css-icon {
   width: 85px;
@@ -341,4 +344,8 @@ section {
   margin: 50px auto;
   border: 1px solid aliceblue;
   box-shadow: 0 0 5px 1px aliceblue;
+  background: none;
+}
+.w3c-css-icon a {
+  background: none;
 }
