@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-let gradient = ctx.createLinearGradient(canvas.width/10, 0, canvas.width, 0);
+let gradient = ctx.createLinearGradient(canvas.width / 10, 0, canvas.width, 0);
 gradient.addColorStop(0, "cyan");
 gradient.addColorStop(0.5, "blue");
 gradient.addColorStop(1, "cyan");
@@ -81,8 +81,8 @@ window.addEventListener("resize", function () {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   effect.resize(canvas.width, canvas.height);
-  gradient = ctx.createLinearGradient(canvas.width/10, 0, canvas.width, 0);
-gradient.addColorStop(0, "cyan");
-gradient.addColorStop(0.5, "blue");
-gradient.addColorStop(1, "cyan");
+  gradient = ctx.createLinearGradient(canvas.width / 10, 0, canvas.width, 0);
+  gradient.addColorStop(0, "cyan");
+  gradient.addColorStop(0.5, "blue");
+  gradient.addColorStop(1, "cyan");
 });

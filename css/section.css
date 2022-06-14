@@ -14,7 +14,7 @@ section {
   left: 0;
   z-index: 10;
 }
-#home h1 {
+.home h1 {
   width: fit-content;
   position: fixed;
   left: 0;
@@ -81,14 +81,14 @@ section {
     font-size: 10px;
   }
 }
-#about,
-#projects,
-#contact {
+.about,
+.projects,
+.contact {
   display: none;
 }
-#about h1,
-#projects h1,
-#contact h1 {
+.about h1,
+.projects h1,
+.contact h1 {
   width: fit-content;
   margin: 20px auto;
   padding: 10px;
@@ -105,7 +105,7 @@ section {
   padding: 20px;
   background-color: rgb(0, 0, 0, 0.8);
 }
-#about {
+.about {
   background: linear-gradient(white, black, white);
 }
 .about-content {
@@ -181,7 +181,7 @@ section {
   box-shadow: 0 0 20px 10px rgb(0, 0, 0, 0.5);
   clip-path: none;
 }
-#projects {
+.projects {
   background: url(/images/blueice.jpg) center/cover;
 }
 .projects-content {
@@ -189,19 +189,19 @@ section {
   flex-direction: column;
   padding: 40px 20px 100px 20px;
 }
-#javascriptive-link {
+.javascriptive-link {
   background: linear-gradient(to top right, black, rgb(106, 106, 106), black);
   border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
   margin: 50px auto;
   max-width: fit-content;
 }
-#javascriptive-link a {
+.javascriptive-link a {
   display: block;
   border-radius: 20px;
   color: aliceblue;
 }
-#javascriptive-link h2 {
+.javascriptive-link h2 {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 20px;
   line-height: 30px;

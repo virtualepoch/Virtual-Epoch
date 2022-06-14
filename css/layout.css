@@ -114,7 +114,7 @@ nav {
   transform: rotate(-45deg);
 }
 /* // MENU BOX STYLING ///////////////////////////////////////////// */
-#menu-box {
+.menu-box {
   max-width: 1200px;
   height: calc(100vh - 75px);
   position: fixed;
@@ -132,7 +132,7 @@ nav {
   transition: 0.5s;
   overflow-y: auto;
 }
-#menu-box.open {
+.menu-box.open {
   top: 0;
 }
 #link1,
@@ -156,7 +156,7 @@ nav {
 #link4 {
   transition: 0.5s;
 }
-#menu-box a:hover {
+.menu-box a:hover {
   padding: 7px 13px;
   border-radius: 3px;
   color: black;
@@ -172,10 +172,10 @@ nav {
   z-index: 111;
   margin: 0 auto;
 }
-#action-btn-page-1,
-#action-btn-page-2,
-#action-btn-page-3,
-#action-btn-page-4 {
+.action-btn-page-1,
+.action-btn-page-2,
+.action-btn-page-3,
+.action-btn-page-4 {
   height: 40px;
   width: 140px;
   position: fixed;
@@ -191,12 +191,12 @@ nav {
   color: white;
   cursor: pointer;
 }
-#action-btn-page-2,
-#action-btn-page-3,
-#action-btn-page-4 {
+.action-btn-page-2,
+.action-btn-page-3,
+.action-btn-page-4 {
   display: none;
 }
-#action-btn {
+.action-btn {
   width: 140px;
   height: 40px;
   position: absolute;
@@ -209,7 +209,7 @@ nav {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
 }
-#action-btn::before {
+.action-btn::before {
   content: "";
   width: 500px;
   height: 500px;
@@ -224,7 +224,7 @@ nav {
     transform: rotate(360deg);
   }
 }
-#action-btn::after {
+.action-btn::after {
   content: "";
   width: 98%;
   height: 95%;
