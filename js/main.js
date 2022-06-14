@@ -47,10 +47,10 @@ menuBtn.addEventListener("mouseup", function () {
   menuBtn.style.boxShadow = "";
 });
 
-const home = document.querySelector(".home");
-const about = document.querySelector(".about");
-const projects = document.querySelector(".projects");
-const contact = document.querySelector(".contact");
+const home = document.querySelector("#home");
+const about = document.querySelector("#about");
+const projects = document.querySelector("#projects");
+const contact = document.querySelector("#contact");
 const actionBtn = document.querySelector(".action-btn-page-1");
 const actionBtn2 = document.querySelector(".action-btn-page-2");
 const actionBtn3 = document.querySelector(".action-btn-page-3");
