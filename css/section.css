@@ -96,7 +96,7 @@ section {
   border-bottom: 2px solid white;
   background: radial-gradient(farthest-corner at 50% 100%, rgb(202, 201, 201), rgb(151, 151, 151) 20%, rgb(0, 0, 0) 70%);
 }
-/*==ABOUT=PROJECTS=CONTACT==CONTENT==VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/* ABOUT, PROJECTS, CONTACT-CONTENT //////////////////*/
 .about-content,
 .projects-content {
   max-width: 1200px;
@@ -268,7 +268,7 @@ section {
   padding: 0 15px 40px 15px;
   line-height: 25px;
 }
-/* CONTACT SECTION STYLING //////////////////////////////////////////// */
+/* CONTACT SECTION STYLING //////////////////////// */
 .contact-content {
   max-width: 1200px;
   min-height: 100%;
