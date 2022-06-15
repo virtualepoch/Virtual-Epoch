@@ -10,15 +10,13 @@ gradient.addColorStop(1, "cyan");
 
 class Symbol {
   constructor(x, y, fontSize, canvasHeight) {
-    this.characters = "01";
+    this.characters = "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     this.x = x;
     this.y = y;
     this.fontSize = fontSize;
     this.text = "";
     this.canvasHeight = canvasHeight;
   }
-
-  // "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   
   // Note: the 'draw' method below is custom and can be named anything you want.
   // Extra Note: the 'charAt()' method is a built-in JavaScript string method. It can be called on string data type. It takes a single 'index' argument and returns a new string containing only that one character located at that specific offset of the string.
