@@ -275,26 +275,23 @@ section {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px 100px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.contact-content div,
-.contact-content a {
+.profile-card,
+.contact-link {
+  margin: 33px 0;
+  padding: 15px;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px aliceblue;
   background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
 }
 .profile-card {
   max-width: 500px;
-  margin: 20px auto;
-  padding: 20px 10px;
   line-height: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 5px rgb(240, 248, 255, 0.5);
-}
-.profile-card p {
-  padding: 5px;
-  font-size: 20px;
-  letter-spacing: 0px;
 }
 .profile-logo {
   width: 100px;
@@ -302,51 +299,21 @@ section {
   margin: 10px;
   border-radius: 50%;
 }
-.email-link {
-  width: fit-content;
-  display: block;
-  padding: 10px;
-  margin: 100px auto 0 auto;
-  border: 1px solid aliceblue;
-  border-radius: 7px;
-  box-shadow: 0 0 5px 1px aliceblue;
-}
-.icon-link {
+.contact-link {
   width: fit-content;
   height: fit-content;
-  margin: 50px auto;
-  border: 1px solid aliceblue;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 1px aliceblue;
 }
-.icon-link i {
-  padding: 10px;
-  font-size: 30px;
-}
-.resume-link {
-  border: none;
-  box-shadow: none;
-  background: black;
+.contact-link i {
+  font-size: 40px;
 }
 .resume-link p {
-  padding: 5px 0;
   font-size: 17px;
-  background: black;
-}
-.resume-link i {
-  border: 1px solid aliceblue;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 1px aliceblue;
-  background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
 }
 .w3c-css-icon {
   width: 85px;
   height: 33px;
-  margin: 50px auto;
+  margin: 33px 0;
   border: 1px solid aliceblue;
   box-shadow: 0 0 5px 1px aliceblue;
-  background: none;
-}
-.w3c-css-icon a {
   background: none;
 }
