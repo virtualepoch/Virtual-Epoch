@@ -22,12 +22,14 @@ section {
   z-index: 11;
   margin: 0 auto;
   padding: 10px 15px;
-  border-right: 1px solid rgb(119, 119, 119);
-  border-bottom: 1px solid rgb(119, 119, 119, 0.5);
-  border-left: 1px solid rgb(119, 119, 119);
-  font-size: 20px;
+  border: 1px solid rgb(119, 119, 119);
+  border-top: none;
+  font-size: clamp(1rem, 1vw, 1.4rem);
   box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
   background: black;
+}
+#home h2 {
+  font-size: clamp(1rem, 1vw, 1.5rem);
 }
 #h2,
 #h4 {
@@ -283,10 +285,10 @@ section {
 .profile-card,
 .contact-link {
   margin: 33px 0;
-  padding: 15px;
+  padding: 11px;
   border: 1px solid aliceblue;
   border-radius: 10px;
-  box-shadow: 0 0 5px 1px aliceblue;
+  box-shadow: 0 0 7px 2px aliceblue;
   background: linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
 }
 .profile-card {
@@ -299,10 +301,6 @@ section {
   margin: 10px;
   border-radius: 50%;
 }
-.contact-link {
-  width: fit-content;
-  height: fit-content;
-}
 .contact-link i {
   font-size: 40px;
 }
@@ -314,6 +312,6 @@ section {
   height: 33px;
   margin: 33px 0;
   border: 1px solid aliceblue;
-  box-shadow: 0 0 5px 1px aliceblue;
+  box-shadow: 0 0 7px 2px aliceblue;
   background: none;
 }

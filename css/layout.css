@@ -3,10 +3,6 @@
   font-family: Blackpast;
   src: url(/fonts/BlackpastDemo-vm2l9.ttf);
 }
-@font-face {
-  font-family: SEGA;
-  src: url(/fonts/SEGA.TTF);
-}
 * {
   margin: 0;
   padding: 0;
@@ -15,20 +11,17 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: "Cormorant", sans-serif;
+  font: 300 17px/30px Verdana, sans-serif;
+  color: #d7d7d7;
 }
 body {
   height: 100vh;
   background: black;
-  color: #d7d7d7;
 }
-a {
-  color: #d7d7d7;
-}
+
 /* // TOP NAVIGATION BAR ////////////////////////////////////////// */
 nav {
   width: 100vw;
-  height: 55px;
   position: fixed;
   top: 0;
   z-index: 11111;
@@ -36,10 +29,6 @@ nav {
 .top-nav {
   max-width: 1200px;
   height: 55px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   margin: auto;
   display: flex;
   align-items: center;
@@ -59,9 +48,7 @@ nav {
   border: 1px solid white;
 }
 .nav-header {
-  font-family: Blackpast;
-  font-size: 20px;
-  letter-spacing: 2px;
+  font: clamp(1.4rem, 3.5vw, 2.7rem) Blackpast;
 }
 /* // MENU BUTTON STYLING ///////////////////////////////////////// */
 .menu-btn {
