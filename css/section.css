@@ -295,9 +295,6 @@
 .profile-card {
   max-width: 500px;
 }
-.profile-card p {
- border: solid red;
-}
 .profile-logo {
   width: 100px;
   float: left;
@@ -306,9 +303,6 @@
 }
 .contact-link i {
   font-size: 40px;
-}
-.resume-link p {
-  font-size: 17px;
 }
 .w3c-css-icon {
   width: 85px;
