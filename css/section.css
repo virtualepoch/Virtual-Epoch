@@ -110,24 +110,11 @@
   min-height: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgb(0, 0, 0, 0.8);
-}
-#about {
-  background: linear-gradient(white, black, white);
-}
-.about-content {
-  padding-bottom: 50px;
-  margin-bottom: 400px;
-  position: relative;
-  z-index: 11;
+  background-color: rgb(0, 0, 0, 0.9);
 }
 .pyramid-container {
   max-width: 1200px;
-  height: calc(100vh - 75px);
-  position: fixed;
-  top: 60px;
-  left: 0;
-  right: 0;
+  height: 555px;
   margin: 0 auto;
 }
 .pyramid-wrapper {
@@ -137,8 +124,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  perspective: 470px;
-  perspective-origin: 50%;
+  perspective: 1300px;
+  perspective-origin: 50% 20%;
 }
 .pyramid {
   width: 200px;
@@ -146,7 +133,7 @@
   transform-style: preserve-3d;
   position: absolute;
   bottom: 33%;
-  animation: pyramid-spin 4s linear infinite;
+  animation: pyramid-spin 22s linear infinite;
 }
 @keyframes pyramid-spin {
   100% {
@@ -181,11 +168,14 @@
   transform-origin: 0 50%;
 }
 .pyramid .pyramid-shadow {
-  background: rgb(0, 0, 0, 0.4);
-  transform: rotateX(90deg) translateZ(-130px);
+  width: 1111px;
+  height: 1111px;
   border: none;
   box-shadow: 0 0 20px 10px rgb(0, 0, 0, 0.5);
   clip-path: none;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0) 67%), repeating-conic-gradient(from 45deg, rgb(192, 192, 192) 0deg 90deg, rgb(220, 220, 220) 90deg 180deg);
+  background-size: 100%;
+  transform: rotateX(90deg) translateX(-455px) translateZ(373px);
 }
 #projects {
   background: url(/images/blueice.jpg) center/cover;
@@ -304,7 +294,9 @@
 }
 .profile-card {
   max-width: 500px;
-  line-height: 30px;
+}
+.profile-card p {
+ border: solid red;
 }
 .profile-logo {
   width: 100px;
