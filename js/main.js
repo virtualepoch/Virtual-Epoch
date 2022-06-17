@@ -1,13 +1,15 @@
+const homeHeader = document.querySelector(".section-main-header");
 const h2 = document.querySelector("#h2");
 const h3 = document.querySelector("#h3");
 const h4 = document.querySelector("#h4");
 const h5 = document.querySelector("#h5");
 
 window.onload = function loadHome() {
-  h2.className = "load";
-  h3.className = "load";
-  h4.className = "load";
-  h5.className = "load";
+  homeHeader.classList.add("load");
+  h2.classList.add("load");
+  h3.classList.add("load");
+  h4.classList.add("load");
+  h5.classList.add("load");
 };
 
 const menuBtn = document.querySelector(".menu-btn");
@@ -57,7 +59,7 @@ const actionBtn3 = document.querySelector(".action-btn-page-3");
 const actionBtn4 = document.querySelector(".action-btn-page-4");
 
 function changeHome() {
-  home.style.display = "block";
+  home.style.display = "flex";
   about.style.display = "none";
   projects.style.display = "none";
   contact.style.display = "none";

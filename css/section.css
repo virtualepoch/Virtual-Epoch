@@ -1,12 +1,10 @@
-section {
-  width: 100vw;
-  height: calc(100vh - 75px);
-  position: fixed;
-  top: 55px;
-  text-align: center;
-  font-size: 20px;
-  overflow-x: hidden;
-  overflow-y: auto;
+#home {
+  padding: 55px 0 20vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s ease-in-out 1s;
 }
 #canvas1 {
   position: fixed;
@@ -14,31 +12,35 @@ section {
   left: 0;
   z-index: 10;
 }
-#home h1 {
+.section-main-header {
   width: fit-content;
   position: fixed;
+  top: -100px;
   left: 0;
   right: 0;
   z-index: 11;
   margin: 0 auto;
-  padding: 10px 15px;
+  padding: 5px 15px;
   border: 1px solid rgb(119, 119, 119);
   border-top: none;
   font-size: clamp(1rem, 1vw, 1.4rem);
   box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
   background: black;
 }
+.section-main-header.load {
+  transition: 0.5s ease-in-out;
+  top: 65px;
+}
 #home h2 {
-  font-size: clamp(1rem, 1vw, 1.5rem);
+  font-size: clamp(1rem, 1vw, 2rem);
 }
 #h2,
 #h4 {
   width: fit-content;
   position: relative;
-  right: -444%;
+  right: -444vw;
   z-index: 11;
   margin: 10px auto;
-  margin-top: 100px;
   padding: 5px 20px;
   border-left: 1px solid white;
   border-bottom: 1px solid rgb(61, 61, 61);
@@ -49,7 +51,7 @@ section {
 #h5 {
   width: fit-content;
   position: relative;
-  left: -444%;
+  left: -444vw;
   z-index: 11;
   margin: 10px auto;
   padding: 5px 20px;
@@ -75,6 +77,9 @@ section {
   left: 0;
 }
 @media (max-height: 500px) {
+  #home {
+    flex-direction: row;
+  }
   #h2,
   #h3,
   #h4,
