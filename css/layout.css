@@ -19,10 +19,10 @@ body {
   background: black;
 }
 h2 {
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1.1rem, 3vw, 2rem);
 }
 p{
-  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-size: clamp(0.9rem, 3vw, 1rem);
 }
 /* // TOP NAVIGATION BAR ////////////////////////////////////////// */
 nav {
