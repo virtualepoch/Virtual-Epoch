@@ -18,7 +18,12 @@ body {
   height: 100vh;
   background: black;
 }
-
+h2 {
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+p{
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
 /* // TOP NAVIGATION BAR ////////////////////////////////////////// */
 nav {
   width: 100vw;
@@ -246,7 +251,6 @@ section {
   position: fixed;
   top: 55px;
   text-align: center;
-  font-size: 20px;
   overflow-x: hidden;
   overflow-y: auto;
 }
