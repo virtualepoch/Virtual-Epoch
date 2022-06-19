@@ -208,7 +208,6 @@
 
   <section id="contact">
     <h1>Contact</h1>
-
     <div class="contact-content">
       <p class="text-box profile-card">
         <img class="profile-logo" src="/logos/ve-logo-200.png" alt="site-logo" />
@@ -221,21 +220,29 @@
         assistance to friends with their own hobby projects. I've made a few projects with React.js as well as with
         the SvelteKit compiler. You can find some of my projects at the GitHub link below.
       </p>
-      <a class="contact-link email-link" href="mailto:cdk11235@gmail.com">cdk11235@gmail.com</a>
-      <a class="contact-link icon-link" href="https://github.com/virtualepoch"><i class="fa-brands fa-github"></i></a>
-      <a class="contact-link icon-link" href="https://www.linkedin.com/in/craig-kaufman/"><i
-          class="fa-brands fa-linkedin"></i></a>
-      <a class="contact-link icon-link resume-link" href="images/cdk-NEW-CANVA-RESUME-2-28-22.pdf">
-        <p>résumé</p><i class="fa-solid fa-file-pdf"></i>
+      <div class="contact-link-row">
+        <a class="contact-link github-link" href="https://github.com/virtualepoch"></a>
+        <a class="contact-link linkedin-link" href="https://www.linkedin.com/in/craig-kaufman/"></a>
+        <a class="contact-link email-link" href="mailto:cdk11235@gmail.com"></a>
+      </div>
+      <a href="#resume-page" class="contact-link resume-page-link" onclick="openResume()">
+        <p>résumé</p>
       </a>
+      <div id="resume-page">
+        <div class="download-row">
+          <a class="resume-download-link" href="images/craig_kaufman_resume.pdf">
+          </a>
+          <p>&#x2190; Press icon to download pdf</p>
+          <div class="resume-close-btn" onclick="openResume()">X</div>
+        </div>
+        <img class="resume-png" src="/images/craig_kaufman_resume_w700.png" alt="resume">
+      </div>
       <div class="w3c-css-icon">
-
         <a href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=www.virtualepoch.com&usermedium=all&vextwarning=&warning=1
           ">
           <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
             alt="Valid CSS!" />
         </a>
-
       </div>
     </div>
   </section>
@@ -243,7 +250,7 @@
   <footer>www.virtualepoch.com</footer>
 
   <script src="/js/main.js"></script>
-  <script src="/js/canvas1.js"></script>
+  <script src="/js/canas1.js"></script>
 
 </body>
 

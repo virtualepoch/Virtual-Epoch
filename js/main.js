@@ -110,3 +110,13 @@ function changeContact() {
   menuBtn.classList.remove("open");
   menuOpen = false;
 }
+
+const resumePage = document.querySelector("#resume-page");
+
+function openResume() {
+  if (resumePage.classList.contains("open")) {
+    resumePage.classList.remove("open");
+  } else {
+    resumePage.classList.add("open");
+  }
+}
