@@ -366,9 +366,6 @@
   background: url(/icons/file-pdf-solid.svg) 50% 50% / 60% 60% no-repeat;
   box-shadow: 0 3px 5px 3px rgb(0, 0, 0, 0.3);
 }
-.download-row p {
-  color: black;
-}
 .resume-close-btn {
   width: 55px;
   height: 55px;
