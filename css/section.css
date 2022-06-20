@@ -123,7 +123,7 @@
   align-items: center;
   justify-content: center;
   perspective: 1300px;
-  perspective-origin: 50% 20%;
+  perspective-origin: 50% 0%;
 }
 .pyramid {
   width: 200px;
@@ -131,7 +131,7 @@
   transform-style: preserve-3d;
   position: absolute;
   bottom: 33%;
-  animation: pyramid-spin 22s linear infinite;
+  animation: pyramid-spin 24s linear infinite;
 }
 @keyframes pyramid-spin {
   100% {
