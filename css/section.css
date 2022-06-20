@@ -319,17 +319,20 @@
   background: url(/icons/envelope-solid.svg) 50% 50% / 60% 60% no-repeat, linear-gradient(to top right, black, rgb(124, 124, 124), black, rgb(158, 158, 158));
 }
 .resume-page-link {
-  width: 200px;
-  height: 259px;
+  width: 100px;
+  height: 130px;
   margin: 33px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/images/craig_kaufman_resume_w200.png) 0 /100% 100%;
+  border-radius: 0;
+  background: url(/images/craig_kaufman_resume_w100.png) 0 /100% 100%;
 }
 .resume-page-link p {
-  font: italic 33px/33px sans-serif;
-  color: black;
+  position: relative;
+  top: -65%;
+  font: italic 22px/33px sans-serif;
+  color: aliceblue;
 }
 #resume-page {
   max-width: 1200px;
@@ -355,7 +358,7 @@
   padding: 11px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .resume-download-link {
   width: 55px;
