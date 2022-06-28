@@ -25,13 +25,13 @@ p {
   font-size: clamp(0.9rem, 3vw, 1rem);
 }
 /* // TOP NAVIGATION BAR ////////////////////////////////////////// */
-nav {
+header {
   width: 100vw;
   position: fixed;
   top: 0;
   z-index: 1111111;
 }
-.top-nav {
+.top-header {
   max-width: 1200px;
   height: 55px;
   margin: auto;
@@ -52,11 +52,11 @@ nav {
 .site-logo:hover {
   border: 1px solid white;
 }
-.nav-header {
+.site-name {
   font: clamp(1.4rem, 3.5vw, 2.7rem) Blackpast;
 }
 /* // MENU BUTTON STYLING ///////////////////////////////////////// */
-.menu-btn {
+.nav-btn {
   width: 50px;
   height: 50px;
   display: flex;
@@ -68,7 +68,7 @@ nav {
   box-shadow: 1px -1px 5px 2px rgb(255, 255, 255, 0.3) inset;
   background: rgb(0, 0, 0, 0.7);
 }
-.menu-btn-bars {
+.nav-btn-bars {
   width: 25px;
   height: 1px;
   border-radius: 2px;
@@ -76,8 +76,8 @@ nav {
   transition: all 0.5s ease-in-out;
   background: white;
 }
-.menu-btn-bars::before,
-.menu-btn-bars::after {
+.nav-btn-bars::before,
+.nav-btn-bars::after {
   content: "";
   width: 25px;
   height: 1px;
@@ -87,26 +87,26 @@ nav {
   background: white;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn-bars::before {
+.nav-btn-bars::before {
   transform: translateY(-7px);
 }
-.menu-btn-bars::after {
+.nav-btn-bars::after {
   transform: translateY(7px);
 }
 /* BUTTON ANIMATION  */
-.menu-btn.open .menu-btn-bars {
+.nav-btn.open .nav-btn-bars {
   /* transform: translateX(-50px); */
   box-shadow: none;
   background: transparent;
 }
-.menu-btn.open .menu-btn-bars::before {
+.nav-btn.open .nav-btn-bars::before {
   transform: rotate(45deg);
 }
-.menu-btn.open .menu-btn-bars::after {
+.nav-btn.open .nav-btn-bars::after {
   transform: rotate(-45deg);
 }
 /* // MENU BOX STYLING ///////////////////////////////////////////// */
-.menu-box {
+.nav-box {
   max-width: 1200px;
   height: calc(100vh - 75px);
   position: fixed;
@@ -124,7 +124,7 @@ nav {
   transition: 0.5s;
   overflow-y: auto;
 }
-.menu-box.open {
+.nav-box.open {
   top: 0;
 }
 #link1,
@@ -148,7 +148,7 @@ nav {
 #link4 {
   transition: 0.5s;
 }
-.menu-box a:hover {
+.nav-box a:hover {
   padding: 7px 13px;
   border-radius: 3px;
   color: black;
