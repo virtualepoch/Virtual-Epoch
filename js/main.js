@@ -1,4 +1,4 @@
-const homeHeader = document.querySelector(".section-main-header");
+const homeHeader = document.querySelector(".section-main-heading");
 const h2 = document.querySelector("#h2");
 const h3 = document.querySelector("#h3");
 const h4 = document.querySelector("#h4");
@@ -14,26 +14,18 @@ window.onload = function loadHome() {
 
 const navBtn = document.querySelector(".nav-btn");
 const navBox = document.querySelector(".nav-box");
-let navOpen = false;
+const link1 = document.querySelector("#link1");
+const link2 = document.querySelector("#link2");
+const link3 = document.querySelector("#link3");
+const link4 = document.querySelector("#link4");
 
 navBtn.addEventListener("click", () => {
-  if (!navOpen) {
-    navBtn.classList.add("open");
-    navBox.classList.add("open");
-    navOpen = true;
-    link1.style.top = "0";
-    link2.style.top = "0";
-    link3.style.top = "0";
-    link4.style.top = "0";
-  } else {
-    navBtn.classList.remove("open");
-    navBox.classList.remove("open");
-    navOpen = false;
-    link1.style.top = "";
-    link2.style.top = "";
-    link3.style.top = "";
-    link4.style.top = "";
-  }
+  navBtn.classList.toggle("open");
+  navBox.classList.toggle("open");
+  link1.classList.toggle("open");
+  link2.classList.toggle("open");
+  link3.classList.toggle("open");
+  link4.classList.toggle("open");
 });
 
 navBtn.addEventListener("touchstart", function () {
@@ -69,7 +61,10 @@ function changeHome() {
   actionBtn4.style.display = "none";
   navBox.classList.remove("open");
   navBtn.classList.remove("open");
-  navOpen = false;
+  link1.classList.remove("open");
+  link2.classList.remove("open");
+  link3.classList.remove("open");
+  link4.classList.remove("open");
 }
 function changeAbout() {
   home.style.display = "none";
@@ -82,7 +77,10 @@ function changeAbout() {
   actionBtn4.style.display = "none";
   navBox.classList.remove("open");
   navBtn.classList.remove("open");
-  navOpen = false;
+  link1.classList.remove("open");
+  link2.classList.remove("open");
+  link3.classList.remove("open");
+  link4.classList.remove("open");
 }
 function changeProjects() {
   home.style.display = "none";
@@ -95,7 +93,10 @@ function changeProjects() {
   actionBtn4.style.display = "none";
   navBox.classList.remove("open");
   navBtn.classList.remove("open");
-  navOpen = false;
+  link1.classList.remove("open");
+  link2.classList.remove("open");
+  link3.classList.remove("open");
+  link4.classList.remove("open");
 }
 function changeContact() {
   home.style.display = "none";
@@ -108,7 +109,10 @@ function changeContact() {
   actionBtn4.style.display = "block";
   navBox.classList.remove("open");
   navBtn.classList.remove("open");
-  navOpen = false;
+  link1.classList.remove("open");
+  link2.classList.remove("open");
+  link3.classList.remove("open");
+  link4.classList.remove("open");
 }
 
 const resumePage = document.querySelector("#resume-page");

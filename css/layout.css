@@ -148,6 +148,12 @@ header {
 #link4 {
   transition: 0.5s;
 }
+#link1.open,
+#link2.open,
+#link3.open,
+#link4.open {
+  top: 0;
+}
 .nav-box a:hover {
   padding: 7px 13px;
   border-radius: 3px;

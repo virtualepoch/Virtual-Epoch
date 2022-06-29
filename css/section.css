@@ -12,7 +12,7 @@
   left: 0;
   z-index: 10;
 }
-.section-main-header {
+.section-main-heading {
   width: fit-content;
   position: fixed;
   top: -100px;
@@ -27,7 +27,7 @@
   box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.2) inset;
   background: black;
 }
-.section-main-header.load {
+.section-main-heading.load {
   transition: 0.5s ease-in-out;
   top: 65px;
 }
