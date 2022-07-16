@@ -10,8 +10,7 @@ gradient.addColorStop(1, "cyan");
 
 class Symbol {
   constructor(x, y, fontSize, canvasHeight) {
-    this.characters = "|O";
-    // 'THE MATRIX' CHARACTERS: アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    this.characters = "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     this.x = x;
     this.y = y;
     this.fontSize = fontSize;
